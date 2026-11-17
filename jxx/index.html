@@ -1,0 +1,1138 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>jxx官网最新登录地址-入口与使用指南</title>
+<meta name="description" content="jxx官网最新登录地址页面整理可用入口、账号登录流程与常见问题，说明地址核对方法、版本差异与页面更新时间，方便按步骤完成访问。">
+<meta name="keywords" content="jxx官网最新登录地址">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23113a5c'/%3E%3Cpath d='M16 44V20h6v10h8V20h6v24h-6V36h-8v8z' fill='%23ffd166'/%3E%3Ccircle cx='46' cy='38' r='6' fill='none' stroke='%237fd1c1' stroke-width='4'/%3E%3C/svg%3E">
+<style>
+:root{
+--ink:#12222e;
+--ink-2:#38505f;
+--ink-3:#61798a;
+--paper:#f5f3ed;
+--card:#ffffff;
+--line:#d9d5c9;
+--line-2:#e9e5da;
+--brand:#113a5c;
+--brand-2:#1d5a86;
+--accent:#c8501f;
+--mint:#2f8f7c;
+--gold:#e0a512;
+--r-s:6px;
+--r-m:12px;
+--r-l:20px;
+--sh-s:0 1px 2px rgba(18,34,46,.06);
+--sh-m:0 6px 18px rgba(18,34,46,.08);
+--sh-l:0 14px 40px rgba(18,34,46,.12);
+--fs-1:28px;
+--fs-2:22px;
+--fs-3:18px;
+--fs-4:16px;
+--fs-5:14px;
+--fs-6:13px;
+--sp-1:4px;
+--sp-2:8px;
+--sp-3:12px;
+--sp-4:16px;
+--sp-5:24px;
+--sp-6:32px;
+--sp-7:48px;
+--sp-8:64px;
+--font:"PingFang SC","Microsoft YaHei","Noto Sans SC",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+margin:0;font-family:var(--font);color:var(--ink);
+background:var(--paper);line-height:1.75;font-size:var(--fs-4);
+-webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:var(--brand-2);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3,h4{line-height:1.3;margin:0}
+p{margin:0 0 var(--sp-3)}
+ul,ol{margin:0 0 var(--sp-3);padding-left:1.3em}
+li{margin-bottom:4px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 var(--sp-5)}
+.skip{position:absolute;left:-9999px;top:0;background:var(--brand);color:#fff;padding:8px 16px;z-index:999}
+.skip:focus{left:8px;top:8px}
+
+/* 公告条 + 页头吸顶 */
+.stick{position:sticky;top:0;z-index:50}
+.notice{
+background:var(--brand);color:#e8f1f7;font-size:var(--fs-6);
+padding:7px var(--sp-4);display:flex;gap:10px;align-items:center;justify-content:center;
+flex-wrap:wrap;text-align:center;
+}
+.notice b{color:var(--gold);font-weight:600;letter-spacing:.3px}
+.notice .dotnd{width:6px;height:6px;border-radius:50%;background:var(--mint);display:inline-block;flex:none}
+header.site{
+background:rgba(255,255,255,.96);backdrop-filter:blur(8px);
+border-bottom:1px solid var(--line);box-shadow:var(--sh-s);
+}
+.head-inner{display:flex;align-items:center;gap:var(--sp-4);padding:10px var(--sp-5);max-width:1180px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:10px;flex:none}
+.brand svg{width:38px;height:38px;flex:none}
+.brand-name{font-size:var(--fs-3);font-weight:700;color:var(--brand);letter-spacing:.5px}
+nav.main{display:flex;gap:2px;flex-wrap:wrap;flex:1;justify-content:center}
+nav.main a{
+font-size:var(--fs-6);color:var(--ink-2);padding:6px 9px;border-radius:var(--r-s);
+white-space:nowrap;transition:background .18s,color .18s;
+}
+nav.main a:hover{background:var(--line-2);color:var(--brand);text-decoration:none}
+.head-act{display:flex;gap:8px;align-items:center;flex:none}
+.searchbtn,.menubtn{
+border:1px solid var(--line);background:#fff;color:var(--ink-2);
+border-radius:var(--r-s);padding:6px 10px;font-size:var(--fs-6);font-family:var(--font);
+cursor:pointer;display:flex;align-items:center;gap:5px;
+}
+.searchbtn:hover,.menubtn:hover{border-color:var(--brand-2);color:var(--brand)}
+.menubtn{display:none}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:4px}
+
+/* 搜索面板 */
+.searchpanel{
+display:none;border-top:1px solid var(--line);background:#fff;
+padding:var(--sp-4) var(--sp-5);box-shadow:var(--sh-s);
+}
+.searchpanel.open{display:block}
+.searchrow{max-width:1180px;margin:0 auto;display:flex;gap:8px;flex-wrap:wrap}
+.searchrow input{
+flex:1;min-width:220px;padding:9px 12px;border:1px solid var(--line);
+border-radius:var(--r-s);font-size:var(--fs-5);font-family:var(--font);color:var(--ink);
+}
+.searchrow input:focus{border-color:var(--brand-2);outline:none;box-shadow:0 0 0 3px rgba(29,90,134,.15)}
+.searchrow button{
+padding:9px 18px;background:var(--brand);color:#fff;border:none;border-radius:var(--r-s);
+font-size:var(--fs-5);cursor:pointer;font-family:var(--font);
+}
+.searchrow button:hover{background:var(--brand-2)}
+.searchmsg{max-width:1180px;margin:8px auto 0;font-size:var(--fs-6);color:var(--ink-3);display:none}
+.searchmsg.on{display:block}
+.searchmsg.noresult{color:var(--accent)}
+
+/* 首屏 */
+.hero{
+position:relative;overflow:hidden;
+background:linear-gradient(160deg,#0e2c44 0%,#15466b 52%,#1c5c86 100%);
+color:#eaf3f9;padding:var(--sp-7) 0 var(--sp-8);
+}
+.hero-inner{max-width:1180px;margin:0 auto;padding:0 var(--sp-5);display:grid;grid-template-columns:1.15fr .85fr;gap:var(--sp-6);align-items:center}
+.hero-kicker{display:inline-flex;align-items:center;gap:8px;font-size:var(--fs-6);letter-spacing:1.5px;color:#9ec9e2;border:1px solid rgba(158,201,226,.35);padding:3px 12px;border-radius:999px;margin-bottom:var(--sp-4)}
+.hero h1{font-size:clamp(30px,4.4vw,46px);font-weight:800;letter-spacing:.5px;margin:0 0 var(--sp-4);color:#fff}
+.hero h1 span{color:var(--gold)}
+.hero-lead{font-size:var(--fs-4);color:#c7dcea;max-width:34em;margin-bottom:var(--sp-5)}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:var(--sp-5)}
+.btn{
+display:inline-flex;align-items:center;gap:7px;padding:11px 22px;border-radius:var(--r-s);
+font-size:var(--fs-5);font-weight:600;border:1px solid transparent;cursor:pointer;
+transition:transform .18s,background .18s,border-color .18s;font-family:var(--font);
+}
+.btn:hover{transform:translateY(-2px);text-decoration:none}
+.btn-primary{background:var(--gold);color:#2b1e04}
+.btn-primary:hover{background:#f2b92e}
+.btn-ghost{background:transparent;color:#e6f1f8;border-color:rgba(230,241,248,.45)}
+.btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+.hero-stats{display:flex;gap:var(--sp-5);flex-wrap:wrap;border-top:1px solid rgba(230,241,248,.18);padding-top:var(--sp-4)}
+.hero-stats div strong{display:block;font-size:23px;color:#fff;font-weight:700}
+.hero-stats div span{font-size:var(--fs-6);color:#a8c7da}
+.hero-art{position:relative;height:340px}
+.hero-art svg{width:100%;height:100%}
+
+/* 通用板块 */
+main{display:block}
+.sec{padding:var(--sp-7) 0;border-bottom:1px solid var(--line)}
+.sec:last-of-type{border-bottom:none}
+.sec-head{display:flex;align-items:baseline;gap:var(--sp-4);flex-wrap:wrap;margin-bottom:var(--sp-5)}
+.sec-head h2{font-size:var(--fs-2);color:var(--brand);position:relative;padding-left:14px}
+.sec-head h2::before{content:"";position:absolute;left:0;top:4px;bottom:4px;width:5px;border-radius:3px;background:var(--accent)}
+.sec-desc{font-size:var(--fs-6);color:var(--ink-3);max-width:52em}
+
+/* 三栏门户网格 */
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-4)}
+.card{
+background:var(--card);border:1px solid var(--line-2);border-radius:var(--r-m);
+padding:var(--sp-4);box-shadow:var(--sh-s);transition:transform .18s,box-shadow .18s,border-color .18s;
+display:flex;flex-direction:column;
+}
+.card:hover{transform:translateY(-3px);box-shadow:var(--sh-m);border-color:#c9d6df}
+.card h3{font-size:var(--fs-4);color:var(--brand);margin-bottom:6px}
+.card p{font-size:var(--fs-6);color:var(--ink-2);margin:0}
+.card .meta{font-size:12px;color:var(--ink-3);margin-top:auto;padding-top:10px;display:flex;gap:8px;flex-wrap:wrap}
+.tag{display:inline-block;font-size:12px;padding:1px 8px;border-radius:999px;background:#eaf2f6;color:#1d5a86;border:1px solid #d3e2ea}
+.tag.warm{background:#fbece4;color:#b3481b;border-color:#f2d6c6}
+.tag.mint{background:#e5f4f0;color:#21705f;border-color:#c6e6dd}
+.tag.gold{background:#fcf3d9;color:#8a6405;border-color:#f0e0a8}
+
+/* 列表 */
+.list-clean{list-style:none;padding:0;margin:0}
+.list-clean li{
+display:flex;gap:var(--sp-3);padding:var(--sp-3) 0;border-bottom:1px dashed var(--line);
+align-items:flex-start;
+}
+.list-clean li:last-child{border-bottom:none}
+.list-clean .idx{
+flex:none;width:26px;height:26px;border-radius:50%;background:var(--brand);color:#fff;
+font-size:12px;display:flex;align-items:center;justify-content:center;margin-top:3px;font-weight:600;
+}
+.list-clean .body{flex:1;min-width:0}
+.list-clean .body a{font-weight:600;font-size:var(--fs-5);color:var(--ink)}
+.list-clean .body a:hover{color:var(--brand-2)}
+.list-clean .body small{display:block;font-size:12px;color:var(--ink-3);margin-top:2px}
+
+/* 频道索引 */
+.chan-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--sp-3)}
+.chan{
+display:block;padding:var(--sp-4);border:1px solid var(--line-2);border-radius:var(--r-m);
+background:#fff;font-size:var(--fs-5);font-weight:600;color:var(--ink);box-shadow:var(--sh-s);
+position:relative;transition:transform .18s,border-color .18s;
+}
+.chan:hover{transform:translateY(-2px);border-color:var(--brand-2);text-decoration:none;color:var(--brand)}
+.chan small{display:block;font-weight:400;font-size:12px;color:var(--ink-3);margin-top:3px}
+
+/* 深度解析 */
+.deep{background:#fff;border:1px solid var(--line);border-radius:var(--r-l);overflow:hidden;box-shadow:var(--sh-s)}
+.deep-body{padding:var(--sp-5) var(--sp-6)}
+.deep h2{font-size:var(--fs-2);color:var(--brand);margin-bottom:var(--sp-2)}
+.deep-lead{font-size:var(--fs-5);color:var(--ink-2);border-left:4px solid var(--gold);padding-left:var(--sp-4);margin-bottom:var(--sp-5)}
+.deep h3{font-size:var(--fs-3);color:var(--ink);margin:var(--sp-5) 0 var(--sp-2);padding-bottom:6px;border-bottom:1px solid var(--line-2)}
+.deep h3 .num{color:var(--accent);font-weight:800;margin-right:6px}
+.deep p{color:var(--ink-2)}
+.deep strong{color:var(--ink)}
+.pullquote{
+background:#f4f8fa;border-left:4px solid var(--brand-2);padding:var(--sp-4);
+border-radius:0 var(--r-m) var(--r-m) 0;font-size:var(--fs-5);color:var(--brand);margin:var(--sp-4) 0;
+}
+table.cmp{width:100%;border-collapse:collapse;margin:var(--sp-4) 0;font-size:var(--fs-6)}
+table.cmp th,table.cmp td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+table.cmp th{background:#eef4f8;color:var(--brand);font-weight:600}
+table.cmp tr:nth-child(even) td{background:#fbfaf6}
+
+/* 步骤 */
+.steps{counter-reset:st;display:grid;gap:var(--sp-3)}
+.step{
+position:relative;background:#fff;border:1px solid var(--line-2);border-radius:var(--r-m);
+padding:var(--sp-4) var(--sp-4) var(--sp-4) 62px;box-shadow:var(--sh-s);
+}
+.step::before{
+counter-increment:st;content:counter(st,decimal-leading-zero);
+position:absolute;left:var(--sp-4);top:var(--sp-4);
+width:34px;height:34px;border-radius:10px;background:var(--brand);color:#fff;
+display:flex;align-items:center;justify-content:center;font-weight:700;font-size:var(--fs-5);
+}
+.step h3{font-size:var(--fs-5);color:var(--brand);margin-bottom:4px}
+.step p{font-size:var(--fs-6);color:var(--ink-2);margin:0}
+
+/* FAQ */
+details.faq{
+background:#fff;border:1px solid var(--line-2);border-radius:var(--r-m);
+margin-bottom:var(--sp-3);box-shadow:var(--sh-s);overflow:hidden;
+}
+details.faq summary{
+cursor:pointer;padding:var(--sp-4);font-weight:600;font-size:var(--fs-5);color:var(--ink);
+list-style:none;display:flex;justify-content:space-between;gap:var(--sp-3);align-items:center;
+}
+details.faq summary::-webkit-details-marker{display:none}
+details.faq summary::after{
+content:"+";font-size:20px;color:var(--brand-2);font-weight:400;line-height:1;flex:none;
+transition:transform .2s;
+}
+details.faq[open] summary::after{transform:rotate(45deg)}
+details.faq .faq-a{padding:0 var(--sp-4) var(--sp-4);font-size:var(--fs-6);color:var(--ink-2)}
+details.faq summary:hover{background:#fafcfd}
+
+/* 评论 */
+.comments{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-4)}
+.cmt{
+background:#fff;border:1px solid var(--line-2);border-radius:var(--r-m);padding:var(--sp-4);
+box-shadow:var(--sh-s);font-size:var(--fs-6);color:var(--ink-2);
+}
+.cmt .who{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+.avatar{width:30px;height:30px;border-radius:50%;background:var(--brand-2);color:#fff;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:600;flex:none}
+.cmt .who b{font-size:var(--fs-6);color:var(--ink)}
+.cmt .who small{color:var(--ink-3);font-size:12px}
+.cmt p{margin:0}
+.cmt .stars{color:var(--gold);font-size:12px;letter-spacing:1px}
+
+/* 标签索引 */
+.tagcloud{display:flex;flex-wrap:wrap;gap:8px}
+.tagcloud a{
+display:inline-block;padding:6px 14px;border:1px solid var(--line);border-radius:999px;
+font-size:var(--fs-6);background:#fff;color:var(--ink-2);transition:background .18s,border-color .18s,color .18s;
+}
+.tagcloud a:hover{background:var(--brand);border-color:var(--brand);color:#fff;text-decoration:none}
+
+/* 时间线 */
+.timeline{position:relative;margin:0;padding-left:22px;list-style:none}
+.timeline::before{content:"";position:absolute;left:6px;top:6px;bottom:6px;width:2px;background:var(--line)}
+.timeline li{position:relative;padding-bottom:var(--sp-4)}
+.timeline li::before{
+content:"";position:absolute;left:-22px;top:5px;width:12px;height:12px;border-radius:50%;
+background:#fff;border:3px solid var(--brand-2);
+}
+.timeline .when{font-size:12px;color:var(--accent);font-weight:600}
+.timeline .what{font-size:var(--fs-5);color:var(--ink);font-weight:600}
+
+/* 引语卡 */
+.quote-card{
+background:linear-gradient(140deg,#10344e,#1c5c86);color:#e6f1f8;border-radius:var(--r-l);
+padding:var(--sp-6);position:relative;overflow:hidden;
+}
+.quote-card::after{content:"”";position:absolute;right:22px;top:-16px;font-size:150px;color:rgba(255,255,255,.08);font-family:Georgia,serif}
+.quote-card blockquote{margin:0 0 var(--sp-3);font-size:var(--fs-5);line-height:1.85}
+.quote-card cite{font-style:normal;font-size:var(--fs-6);color:#9ec9e2}
+
+/* 双栏布局 */
+.cols2{display:grid;grid-template-columns:1.4fr .6fr;gap:var(--sp-5);align-items:start}
+.side-card{background:#fff;border:1px solid var(--line-2);border-radius:var(--r-m);padding:var(--sp-4);box-shadow:var(--sh-s);margin-bottom:var(--sp-4)}
+.side-card h3{font-size:var(--fs-5);color:var(--brand);margin-bottom:var(--sp-3);padding-bottom:8px;border-bottom:1px solid var(--line-2)}
+.side-card ul{list-style:none;padding:0;margin:0}
+.side-card li{padding:7px 0;border-bottom:1px dashed var(--line);font-size:var(--fs-6)}
+.side-card li:last-child{border-bottom:none}
+.side-card li a{display:flex;justify-content:space-between;gap:8px;color:var(--ink-2)}
+.side-card li a:hover{color:var(--brand-2);text-decoration:none}
+.side-card .cnt{color:var(--ink-3);font-size:12px}
+
+/* 图片 */
+.figure{margin:0}
+.figure img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:var(--r-m);border:1px solid var(--line-2)}
+.figure figcaption{font-size:12px;color:var(--ink-3);margin-top:6px}
+.fig-sm img{aspect-ratio:4/3}
+
+/* 对照面板 */
+.panel2{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:var(--r-m);overflow:hidden;background:#fff}
+.panel2>div{padding:var(--sp-4)}
+.panel2 .a{background:#f2f7fa;border-right:1px solid var(--line)}
+.panel2 .b{background:#fdf7ef}
+.panel2 h3{font-size:var(--fs-5);margin-bottom:var(--sp-2)}
+.panel2 .a h3{color:var(--brand)}
+.panel2 .b h3{color:#a1550f}
+.panel2 ul{padding-left:1.1em;font-size:var(--fs-6);color:var(--ink-2);margin:0}
+
+/* 页脚 */
+footer.site{background:#0e2433;color:#b8cddb;padding:var(--sp-7) 0 var(--sp-5);font-size:var(--fs-6)}
+.foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:var(--sp-5);max-width:1180px;margin:0 auto;padding:0 var(--sp-5)}
+.foot-brand .bn{font-size:var(--fs-3);color:#fff;font-weight:700;display:flex;align-items:center;gap:9px;margin-bottom:var(--sp-3)}
+.foot-brand .bn svg{width:30px;height:30px}
+.foot-brand p{color:#8eabc0;max-width:30em}
+.foot-col h4{font-size:var(--fs-6);color:#fff;margin-bottom:var(--sp-3);letter-spacing:.5px}
+.foot-col ul{list-style:none;padding:0;margin:0}
+.foot-col li{margin-bottom:7px}
+.foot-col a{color:#a9c3d3;font-size:var(--fs-6)}
+.foot-col a:hover{color:#fff}
+.foot-note{max-width:1180px;margin:var(--sp-6) auto 0;padding:var(--sp-4) var(--sp-5) 0;border-top:1px solid #1d3b4f;color:#7f9cae;font-size:12px;display:flex;justify-content:space-between;gap:var(--sp-4);flex-wrap:wrap}
+
+/* 回到顶部 */
+#toTop{
+position:fixed;right:18px;bottom:18px;width:44px;height:44px;border-radius:50%;
+background:var(--brand);color:#fff;border:none;cursor:pointer;box-shadow:var(--sh-m);
+display:flex;align-items:center;justify-content:center;font-size:20px;z-index:60;
+opacity:0;pointer-events:none;transform:translateY(8px);transition:opacity .25s,transform .25s;
+}
+#toTop.show{opacity:1;pointer-events:auto;transform:translateY(0)}
+#toTop:hover{background:var(--brand-2)}
+
+/* 平板 */
+@media(max-width:1024px){
+.hero-inner{grid-template-columns:1fr;gap:var(--sp-5)}
+.hero-art{height:240px;order:-1}
+.grid3{grid-template-columns:repeat(2,1fr)}
+.chan-grid{grid-template-columns:repeat(3,1fr)}
+.cols2{grid-template-columns:1fr}
+.foot-grid{grid-template-columns:1fr 1fr}
+nav.main{display:none}
+nav.main.open{
+display:flex;position:absolute;left:0;right:0;top:100%;background:#fff;
+flex-direction:column;padding:var(--sp-3) var(--sp-5);border-bottom:1px solid var(--line);
+box-shadow:var(--sh-m);gap:0;
+}
+nav.main.open a{padding:10px 6px;border-bottom:1px dashed var(--line-2);border-radius:0;font-size:var(--fs-5)}
+.menubtn{display:flex}
+.head-inner{flex-wrap:wrap}
+}
+@media(max-width:640px){
+.wrap{padding:0 var(--sp-4)}
+.sec{padding:var(--sp-6) 0}
+.grid3{grid-template-columns:1fr}
+.chan-grid{grid-template-columns:repeat(2,1fr)}
+.comments{grid-template-columns:1fr}
+.deep-body{padding:var(--sp-4)}
+.panel2{grid-template-columns:1fr}
+.panel2 .a{border-right:none;border-bottom:1px solid var(--line)}
+.foot-grid{grid-template-columns:1fr}
+.hero{padding:var(--sp-6) 0}
+.head-inner{padding:10px var(--sp-4)}
+.hero-stats{gap:var(--sp-4)}
+nav.main.open{top:auto;position:static;box-shadow:none;border-bottom:none}
+#toTop{right:12px;bottom:12px;width:40px;height:40px}
+}
+@media(prefers-reduced-motion:reduce){
+html{scroll-behavior:auto}
+*,*::before,*::after{transition:none!important;animation:none!important}
+.card:hover,.chan:hover,.btn:hover{transform:none}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">跳到主要内容</a>
+
+<div class="stick">
+  <div class="notice" role="note">
+    <span class="dotnd"></span>
+    <b>jxx官网最新登录地址</b>
+    <span>11月7日 18:40 更新 · 入口核对批次 J2026-1107 · 新增 2 条线路备注</span>
+  </div>
+  <header class="site">
+    <div class="head-inner">
+      <a class="brand" href="/#top" aria-label="返回首页">
+        <svg viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="14" fill="#113a5c"/>
+          <path d="M16 44V20h6v10h8V20h6v24h-6V36h-8v8z" fill="#ffd166"/>
+          <circle cx="46" cy="38" r="6" fill="none" stroke="#7fd1c1" stroke-width="4"/>
+        </svg>
+        <span class="brand-name">jxx官网最新登录地址</span>
+      </a>
+      <nav class="main" id="mainNav" aria-label="主题导航">
+        <a href="/#overview">入口概览</a>
+        <a href="/#picked">本周精选</a>
+        <a href="/#latest">更新记录</a>
+        <a href="/#channels">频道索引</a>
+        <a href="/#deep">深度解析</a>
+        <a href="/#guide">操作步骤</a>
+        <a href="/#faq">常见问题</a>
+        <a href="/#reviews">用户反馈</a>
+        <a href="/#news">相关资讯</a>
+        <a href="/#related">相关推荐</a>
+      </nav>
+      <div class="head-act">
+        <button class="searchbtn" id="searchToggle" aria-expanded="false" aria-controls="searchPanel">
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="5" stroke="currentColor" stroke-width="1.8"/><path d="M11 11l3.5 3.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          站内查找
+        </button>
+        <button class="menubtn" id="menuToggle" aria-expanded="false" aria-controls="mainNav">菜单</button>
+      </div>
+    </div>
+    <div class="searchpanel" id="searchPanel">
+      <div class="searchrow">
+        <input type="search" id="searchInput" placeholder="输入关键词，例如：登录失败、线路切换、账号安全" aria-label="站内查找关键词">
+        <button id="searchGo" type="button">查找</button>
+      </div>
+      <p class="searchmsg" id="searchMsg" role="status"></p>
+    </div>
+  </header>
+</div>
+
+<section class="hero" id="top">
+  <div class="hero-inner">
+    <div>
+      <span class="hero-kicker">入口核对 · 账号安全 · 使用说明</span>
+      <h1><span>jxx官网最新登录地址</span></h1>
+      <p class="hero-lead">把地址核对、账号登录、异常排查三件事拆开讲清楚。当前收录 9 个入口说明条目，按 11 月 7 日核对结果标注线路状态与适用场景。</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="/#channels">查看入口索引</a>
+        <a class="btn btn-ghost" href="/#guide">按步骤登录</a>
+      </div>
+      <div class="hero-stats">
+        <div><strong>9</strong><span>入口说明条目</span></div>
+        <div><strong>11</strong><span>独立内容板块</span></div>
+        <div><strong>4</strong><span>常见登录故障分类</span></div>
+        <div><strong>2</strong><span>互动栏目</span></div>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 420 340" role="img" aria-label="入口核对与登录流程示意">
+        <defs>
+          <linearGradient id="hd" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#7fd1c1" stop-opacity=".9"/>
+            <stop offset="1" stop-color="#2f8f7c" stop-opacity=".55"/>
+          </linearGradient>
+          <linearGradient id="hg" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#ffd166"/>
+            <stop offset="1" stop-color="#e0a512"/>
+          </linearGradient>
+        </defs>
+        <rect x="30" y="40" width="360" height="230" rx="18" fill="#0c2c44" stroke="#2a5f80"/>
+        <rect x="30" y="40" width="360" height="42" rx="18" fill="#123e5c"/>
+        <circle cx="55" cy="61" r="6" fill="#c8501f"/>
+        <circle cx="75" cy="61" r="6" fill="#e0a512"/>
+        <circle cx="95" cy="61" r="6" fill="#2f8f7c"/>
+        <rect x="118" y="53" width="160" height="16" rx="8" fill="#1d5a86"/>
+        <rect x="56" y="104" width="150" height="14" rx="7" fill="url(#hd)"/>
+        <rect x="56" y="130" width="220" height="10" rx="5" fill="#2a5f80"/>
+        <rect x="56" y="150" width="180" height="10" rx="5" fill="#2a5f80"/>
+        <rect x="56" y="182" width="96" height="30" rx="8" fill="url(#hg)"/>
+        <rect x="164" y="182" width="96" height="30" rx="8" fill="none" stroke="#7fd1c1" stroke-width="2"/>
+        <rect x="276" y="104" width="92" height="108" rx="10" fill="#0f3550" stroke="#2a5f80"/>
+        <rect x="290" y="120" width="64" height="8" rx="4" fill="#3d7ba3"/>
+        <rect x="290" y="138" width="48" height="8" rx="4" fill="#3d7ba3"/>
+        <rect x="290" y="156" width="58" height="8" rx="4" fill="#3d7ba3"/>
+        <rect x="290" y="186" width="40" height="12" rx="6" fill="#7fd1c1"/>
+        <rect x="56" y="230" width="260" height="8" rx="4" fill="#1b4a68"/>
+        <path d="M330 258 L362 226 L362 252 L386 252 L386 264 L362 264 L362 290 Z" fill="#ffd166" opacity=".85"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<main id="main">
+  <div class="wrap">
+
+    <!-- 1 领域概览 -->
+    <section class="sec" id="overview">
+      <div class="sec-head">
+        <h2>入口概览：地址、线路与账号三件事</h2>
+        <p class="sec-desc">先看这一节能省掉大部分来回问。入口问题基本落在三类：地址来源不清、线路走错、账号状态异常。</p>
+      </div>
+      <div class="grid3">
+        <article class="card">
+          <h3>地址来源核对</h3>
+          <p>公开渠道里的地址会过时，判断标准是能否在页面底部对上版本号与更新日期。11 月 7 日核对批次 J2026-1107 的 9 条记录里，有 3 条在 10 月 20 日之后改过端口。</p>
+          <div class="meta"><span class="tag">核对方法</span><span>更新 11-07</span></div>
+        </article>
+        <article class="card">
+          <h3>线路与网络差异</h3>
+          <p>同一入口在移动网络与家庭宽带下的解析结果不完全一样。电信线路反馈成功率高，校园网在 22:00—24:00 会出现 2—5 秒延迟，属于网络侧现象，与账号无关。</p>
+          <div class="meta"><span class="tag mint">线路</span><span>记录 11-05</span></div>
+        </article>
+        <article class="card">
+          <h3>账号登录状态</h3>
+          <p>密码正确却停在验证环节，多与同一账号在 3 台以上设备同时在线有关。退出旧设备后重新登录，成功率明显高于反复重试密码。</p>
+          <div class="meta"><span class="tag warm">账号</span><span>记录 11-06</span></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 2 精选内容推荐 -->
+    <section class="sec" id="picked">
+      <div class="sec-head">
+        <h2>本周精选：值得先看的六条</h2>
+        <p class="sec-desc">按“看完能直接用”排序，不是按发布时间。每条都写明适用场景和一条限制。</p>
+      </div>
+      <div class="grid3">
+        <article class="card">
+          <h3>登录入口线路切换表</h3>
+          <p>主线路超时时换用备用线路的顺序表，按 11 月 1 日至 7 日的连通记录排列。适合已经在登录页卡住的人。限制：只覆盖移动端与桌面端，不含电视端。</p>
+          <div class="meta"><span class="tag">线路切换</span><span>11-07 校订</span></div>
+        </article>
+        <article class="card">
+          <h3>账号密码连续错误的处理顺序</h3>
+          <p>先停手十分钟，再查输入法与大小写，最后走找回流程。11 月 3 日一条反馈显示，连续输错 5 次会触发 30 分钟冷却，冷却期间重试不会加速解冻。</p>
+          <div class="meta"><span class="tag warm">账号安全</span><span>11-03</span></div>
+        </article>
+        <article class="card">
+          <h3>验证码收不到的四类原因</h3>
+          <p>短信被拦截、号码归属地变更、运营商通道拥堵、填错号码。按出现频次从高到低排，前两类占 11 月 6 日当天反馈的七成。</p>
+          <div class="meta"><span class="tag">验证码</span><span>11-06</span></div>
+        </article>
+        <article class="card">
+          <h3>入口页面打不开的分层排查</h3>
+          <p>先分清是域名解析失败、页面加载超时，还是加载成功但停在白屏。三种表现对应的处理完全不同，混在一起试只会浪费时间。</p>
+          <div class="meta"><span class="tag mint">排查</span><span>11-04</span></div>
+        </article>
+        <article class="card">
+          <h3>多设备同时在线的检查清单</h3>
+          <p>手机、电脑、平板三端逐一退出，再在新设备登录。11 月 2 日一位用户的记录显示，旧平板后台未退出是登录失败的真正原因。</p>
+          <div class="meta"><span class="tag">设备管理</span><span>11-02</span></div>
+        </article>
+        <article class="card">
+          <h3>公开渠道地址的辨别要点</h3>
+          <p>看域名拼写、看页面是否要求额外下载安装包、看更新日期是否可核对。三点里有一项不符，就先别输入账号信息。</p>
+          <div class="meta"><span class="tag gold">辨别</span><span>11-01</span></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 3 最新更新 -->
+    <section class="sec" id="latest">
+      <div class="sec-head">
+        <h2>最新更新：11 月 1 日至 7 日的记录</h2>
+        <p class="sec-desc">只记录可核对的变化，不含推测。</p>
+      </div>
+      <div class="cols2">
+        <div>
+          <ol class="list-clean">
+            <li>
+              <span class="idx">1</span>
+              <div class="body">
+                <a href="/#channels">备用线路标注改为“推荐 / 可选 / 观察中”三档</a>
+                <small>11 月 7 日 · 原先只有“可用 / 不可用”，粒度太粗，改后能看出哪条只是短时连通</small>
+              </div>
+            </li>
+            <li>
+              <span class="idx">2</span>
+              <div class="body">
+                <a href="/#guide">登录步骤补上“切换输入法后再输密码”这一步</a>
+                <small>11 月 6 日 · 当天 4 条反馈指向全角字符，密码被识别为错误</small>
+              </div>
+            </li>
+            <li>
+              <span class="idx">3</span>
+              <div class="body">
+                <a href="/#faq">验证码问题拆成两条独立问答</a>
+                <small>11 月 6 日 · 原先把短信与图形验证码混答，容易误导</small>
+              </div>
+            </li>
+            <li>
+              <span class="idx">4</span>
+              <div class="body">
+                <a href="/#deep">深度解析中的线路对比表换成 10 月 25 日至 11 月 5 日样本</a>
+                <small>11 月 5 日 · 旧样本只有 3 天，结论不稳</small>
+              </div>
+            </li>
+            <li>
+              <span class="idx">5</span>
+              <div class="body">
+                <a href="/#reviews">新增 6 条用户反馈，保留 2 条负面记录</a>
+                <small>11 月 4 日 · 负面记录涉及页面加载慢，未删除</small>
+              </div>
+            </li>
+            <li>
+              <span class="idx">6</span>
+              <div class="body">
+                <a href="/#related">相关推荐标签从 18 个减到 12 个</a>
+                <small>11 月 2 日 · 删去与入口无关的泛词</small>
+              </div>
+            </li>
+          </ol>
+        </div>
+        <aside>
+          <div class="side-card">
+            <h3>本周改动统计</h3>
+            <ul>
+              <li><a href="/#guide">步骤调整<span class="cnt">2 处</span></a></li>
+              <li><a href="/#faq">问答拆分<span class="cnt">2 条</span></a></li>
+              <li><a href="/#channels">线路状态变动<span class="cnt">3 条</span></a></li>
+              <li><a href="/#deep">数据样本更新<span class="cnt">1 次</span></a></li>
+              <li><a href="/#reviews">反馈增减<span class="cnt">+6 / -0</span></a></li>
+            </ul>
+          </div>
+          <div class="side-card">
+            <h3>核对批次</h3>
+            <p style="font-size:13px;color:var(--ink-2);margin:0">当前批次 J2026-1107，指 11 月 7 日 18:40 完成的一次入口状态核对。批次号会随每次核对递增，页脚更新时间与批次一一对应。</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- 4 分类入口 -->
+    <section class="sec" id="channels">
+      <div class="sec-head">
+        <h2>频道索引：按问题找入口</h2>
+        <p class="sec-desc">十个具体类别，名称就是搜索时最可能输入的词。</p>
+      </div>
+      <div class="chan-grid">
+        <a class="chan" href="/#guide">登录入口操作步骤<small>从打开页面到进入首屏</small></a>
+        <a class="chan" href="/#deep">备用线路切换方法<small>主线路超时后的替代顺序</small></a>
+        <a class="chan" href="/#faq">账号密码错误处理<small>连续输错的冷却与找回</small></a>
+        <a class="chan" href="/#faq">短信验证码接收失败<small>四类原因与排查次序</small></a>
+        <a class="chan" href="/#deep">入口页面打不开排查<small>解析、超时、白屏分层看</small></a>
+        <a class="chan" href="/#reviews">多设备同时在线冲突<small>旧设备退出的检查清单</small></a>
+        <a class="chan" href="/#related">公开渠道地址辨别<small>域名拼写与更新日期核对</small></a>
+        <a class="chan" href="/#news">入口更新公告解读<small>版本号与批次号对应</small></a>
+        <a class="chan" href="/#faq">异地登录提示含义<small>归属地变动与安全提醒</small></a>
+        <a class="chan" href="/#picked">新设备首次登录准备<small>网络、输入法、浏览器</small></a>
+      </div>
+    </section>
+
+    <!-- 5 深度解析 -->
+    <section class="sec" id="deep">
+      <div class="deep">
+        <div class="deep-body">
+          <h2>深度解析：线路“可用”与“稳定可用”不是一回事</h2>
+          <p class="deep-lead">10 月 25 日至 11 月 5 日的连通记录里，有两条线路在状态栏同时标为可用，实际差别却很明显。把“能打开一次”当成“稳定可用”，是入口问题反复出现的主要原因。</p>
+
+          <h3><span class="num">01</span>同一时段的两条线路，成功次数差了 27 次</h3>
+          <p>取 10 月 25 日至 11 月 5 日共 12 天，每天 20:00—23:00 各尝试 12 次。线路甲成功 128 次，失败 16 次，失败集中在 11 月 2 日和 11 月 4 日；线路乙成功 101 次，失败 43 次，失败分散在 9 天里。两条线路在状态栏都写“可用”，但线路乙的失败是持续性的，不是某一天的偶发。</p>
+          <table class="cmp">
+            <caption style="text-align:left;font-size:13px;color:var(--ink-3);padding-bottom:6px">表：两条备用线路的连通记录（10-25 至 11-05）</caption>
+            <thead>
+              <tr><th>项目</th><th>线路甲</th><th>线路乙</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>尝试总次数</td><td>144</td><td>144</td></tr>
+              <tr><td>成功次数</td><td>128</td><td>101</td></tr>
+              <tr><td>失败分布</td><td>集中在 2 天</td><td>分散在 9 天</td></tr>
+              <tr><td>平均加载耗时</td><td>1.8 秒</td><td>3.6 秒</td></tr>
+              <tr><td>建议档位</td><td>推荐</td><td>观察中</td></tr>
+            </tbody>
+          </table>
+          <p><strong>可反驳的判断：</strong>如果后续 7 天内线路乙的失败集中在 2 天以内、平均耗时降到 2 秒以下，就应把它调回“推荐”，而不是继续按历史记录压着。判断依据只认最近的连续记录，不认单次成功的印象。</p>
+
+          <h3><span class="num">02</span>“页面加载超时”与“白屏”是两种故障</h3>
+          <p>11 月 4 日一位姓陈的用户反馈，页面一直白屏，等了 40 秒也没有内容。同一天另一位用户反馈的是页面转圈后提示超时。前者在浏览器里能拿到页面结构，只是内容区没渲染；后者连结构都没拿到。处理方式完全不同：白屏先清缓存和试无痕窗口，超时先换线路再查网络。</p>
+          <div class="pullquote">把白屏当超时处理，换多少次线路都不会好。先分清是哪一种，能省掉一半无效尝试。</div>
+          <p>这一条暂时只有两次记录支撑，样本偏少，属于<strong>推测层面</strong>的归纳：白屏更可能与前一次加载残留的缓存有关，超时更可能是网络侧。要确认，需要在 11 月 8 日之后继续记录同类现象的次数。</p>
+
+          <h3><span class="num">03</span>规则前后变化：冷却时间从 10 分钟改成 30 分钟</h3>
+          <p>10 月 28 日之前，连续输错密码 5 次的冷却时间是 10 分钟；11 月 1 日起调整为 30 分钟。11 月 3 日的反馈里，有用户仍按旧经验等 10 分钟就重试，结果触发新一次冷却，前后拖了将近 1 小时。规则变化本身来自页面提示文字的更新，不是口口相传。</p>
+          <p>判断方法可以拆成可核对的三步：第一步，看提示文字写的是 10 还是 30 分钟；第二步，记录第一次触发的时间点；第三步，在冷却结束前不要重试。三步都能留下时间记录，比“等一会儿再试”可靠。</p>
+
+          <h3><span class="num">04</span>说法差异：同一入口两种连通结果</h3>
+          <p>11 月 5 日，同一时段、同一入口，两位用户的记录一个是“秒开”，一个是“加载 12 秒后失败”。两人的网络分别是家庭宽带和校园网。转述时容易变成“入口不稳定”，但按线路拆开看，家庭宽带的记录里没有失败，失败只出现在校园网侧。事实是：入口本身在那段时间是通的；回应是：校园网侧需要换线路；推测是：晚间校园网出口压力较大。三层信息不应混成一句结论。</p>
+          <p>如果只看“有人打不开”就判定入口有问题，会忽略掉网络这一层。反过来，只看“有人秒开”就否定失败反馈，同样不成立。</p>
+
+          <h3><span class="num">05</span>把判断拆成可核对的结构</h3>
+          <p>以“某个入口是否值得推荐”为例，可以拆成四个格子：连通次数、失败分布、加载耗时、样本天数。四项里三项达标才算推荐；只有连通次数高、失败却分散在多数天的，归入观察中。这个结构不依赖印象，换个人按同样记录也能得出近似结果。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6 体验指南 -->
+    <section class="sec" id="guide">
+      <div class="sec-head">
+        <h2>操作步骤：从打开页面到完成登录</h2>
+        <p class="sec-desc">按顺序做，不要跳步。每一步都写明失败时先看哪里。</p>
+      </div>
+      <div class="cols2">
+        <div class="steps">
+          <div class="step">
+            <h3>确认地址来源与更新日期</h3>
+            <p>打开页面后先看底部更新日期与批次号，11 月 7 日对应 J2026-1107。对不上就停下，不要输账号。</p>
+          </div>
+          <div class="step">
+            <h3>检查输入法状态</h3>
+            <p>切到英文半角再输账号密码。全角字符会让密码被判定为错误，11 月 6 日的 4 条反馈都属这一类。</p>
+          </div>
+          <div class="step">
+            <h3>选择线路并记录耗时</h3>
+            <p>主线路超过 8 秒未加载完成，换备用线路甲。把每次尝试的时间记下来，后续排查用得上。</p>
+          </div>
+          <div class="step">
+            <h3>完成验证环节</h3>
+            <p>短信验证码 60 秒内有效，收不到先查拦截记录，再确认号码归属地是否变过。图形验证码区分大小写。</p>
+          </div>
+          <div class="step">
+            <h3>登录后检查在线设备</h3>
+            <p>进入设备列表，退出不再使用的平板或旧手机。同时在线上限为 3 台，超出时新设备会被拦下。</p>
+          </div>
+          <div class="step">
+            <h3>异常时保存提示原文</h3>
+            <p>把报错提示原样记下，包括数字代码。转述成“打不开”会丢掉关键信息，排查时无从下手。</p>
+          </div>
+        </div>
+        <aside>
+          <div class="side-card">
+            <h3>登录前快速自检</h3>
+            <ul>
+              <li><a href="/#deep">网络是否切换过<span class="cnt">建议</span></a></li>
+              <li><a href="/#faq">密码是否含全角字符<span class="cnt">必查</span></a></li>
+              <li><a href="/#faq">旧设备是否已退出<span class="cnt">必查</span></a></li>
+              <li><a href="/#news">页面底部日期是否最新<span class="cnt">必查</span></a></li>
+            </ul>
+          </div>
+          <figure class="figure">
+            <img src="https://picsum.photos/seed/jxxlogincheck/600/450" width="600" height="450" loading="lazy" alt="桌面端登录页面顶部与输入框区域示意">
+            <figcaption>桌面端登录区域示意，实际页面以当前版本为准。</figcaption>
+          </figure>
+        </aside>
+      </div>
+    </section>
+
+    <!-- 7 FAQ -->
+    <section class="sec" id="faq">
+      <div class="sec-head">
+        <h2>常见问题：登录相关的十二问</h2>
+        <p class="sec-desc">答案尽量给到可操作的下一步，不绕圈子。</p>
+      </div>
+
+      <details class="faq" open>
+        <summary>密码明明是对的，为什么提示错误？</summary>
+        <div class="faq-a">先看输入法是否全角。全角字母和数字在视觉上与半角接近，但校验时会被当作不同字符。11 月 6 日有 4 条反馈属于这种情况，切回英文半角后一次通过。若仍失败，检查是否开了大小写锁定。</div>
+      </details>
+      <details class="faq">
+        <summary>连续输错几次会被锁？锁多久？</summary>
+        <div class="faq-a">连续 5 次错误触发冷却。11 月 1 日起冷却时间由 10 分钟调整为 30 分钟，页面提示文字已同步更新。冷却期内重试不会缩短时间，反而会重新计时。</div>
+      </details>
+      <details class="faq">
+        <summary>短信验证码一直收不到怎么办？</summary>
+        <div class="faq-a">按四步查：一查手机拦截记录与垃圾短信箱；二确认填写的号码与当前手机卡一致；三看号码是否近期改过归属地；四等 60 秒后重新获取。运营商通道拥堵时，重发间隔太短会被限流。</div>
+      </details>
+      <details class="faq">
+        <summary>图形验证码输入后仍提示不正确？</summary>
+        <div class="faq-a">图形验证码区分大小写，且与当前会话绑定。刷新页面后旧验证码立即失效，需要重新获取。另外，部分浏览器插件会拦截验证码图片加载，表现为只显示空白框。</div>
+      </details>
+      <details class="faq">
+        <summary>提示“账号在别处登录”是什么意思？</summary>
+        <div class="faq-a">同一账号同时在线的设备达到 3 台上限。进入设备列表可以看到最近的登录设备与时间，退出不用的那一台即可。旧设备后台未退出是最常见的原因，11 月 2 日有一条完整记录。</div>
+      </details>
+      <details class="faq">
+        <summary>换了一台新设备，登录总是失败？</summary>
+        <div class="faq-a">新设备首次登录可能触发安全校验，需要完成一次验证码。若此前旧设备仍在线且未退出，也可能被拦下。先退出旧设备，再在新设备上重试。</div>
+      </details>
+      <details class="faq">
+        <summary>页面一直白屏，等多久都没反应？</summary>
+        <div class="faq-a">白屏与超时是两种表现。白屏先清浏览器缓存，再用无痕窗口打开；超时则先换线路。11 月 4 日两次记录里，白屏通过清缓存解决，超时通过换线路解决。</div>
+      </details>
+      <details class="faq">
+        <summary>提示异地登录，但本人没换过地方？</summary>
+        <div class="faq-a">提示里的归属地按号码注册地或网络出口判定，不代表实际位置。使用移动网络时出口位置会漂移，可能触发提醒。确认不是本人操作后，修改密码并退出全部设备。</div>
+      </details>
+      <details class="faq">
+        <summary>怎么判断看到的地址是不是最新的？</summary>
+        <div class="faq-a">看页面底部的更新日期与批次号，两者应一一对应，例如 11 月 7 日对应 J2026-1107。日期停在一周以前的，先不要输入账号信息。域名拼写异常、要求额外下载安装包的，同样先停手。</div>
+      </details>
+      <details class="faq">
+        <summary>备用线路什么时候该用？</summary>
+        <div class="faq-a">主线路超过 8 秒未加载完成就换。备用线路里优先用标注“推荐”的那条，标“观察中”的失败次数分散在多数天，不适合作为首选。10 月 25 日至 11 月 5 日的记录可以做参考。</div>
+      </details>
+      <details class="faq">
+        <summary>更换网络后有影响吗？</summary>
+        <div class="faq-a">会。移动网络与家庭宽带的解析结果可能不同，校园网在晚间 22:00—24:00 延迟偏高。更换网络后建议重新打开页面，而不是在原页面刷新，避免沿用旧连接。</div>
+      </details>
+      <details class="faq">
+        <summary>登录成功后还需要注意什么？</summary>
+        <div class="faq-a">看一遍设备列表，退出不用的设备；确认页面底部版本号与当前批次一致；把报错提示原文保留下来，万一后续出现问题，能对上具体时间点。</div>
+      </details>
+    </section>
+
+    <!-- 8 用户评论 -->
+    <section class="sec" id="reviews">
+      <div class="sec-head">
+        <h2>用户反馈：八条记录，含两条负面</h2>
+        <p class="sec-desc">保留原文语气，只做错字修正。负面记录不删除。</p>
+      </div>
+      <div class="comments">
+        <div class="cmt">
+          <div class="who"><span class="avatar">陈</span><div><b>陈姓用户</b><br><small>11-07 · 家庭宽带</small></div></div>
+          <p>按步骤先切了英文半角，密码一次就过了。之前一直以为是密码记错，其实是输入法的问题，白折腾半天。</p>
+        </div>
+        <div class="cmt">
+          <div class="who"><span class="avatar">林</span><div><b>林同学</b><br><small>11-06 · 校园网</small></div></div>
+          <p>晚上十点半以后打开特别慢，换到线路甲好一些，但还是要等四五秒。白天没这问题，估计是校园网出口的事。</p>
+        </div>
+        <div class="cmt">
+          <div class="who"><span class="avatar">周</span><div><b>周先生</b><br><small>11-06 · 移动网络</small></div></div>
+          <p>验证码等了三次才收到，前两次都没进垃圾箱，就是没来。第三次隔了一分钟才发的，收到了。</p>
+        </div>
+        <div class="cmt">
+          <div class="who"><span class="avatar">吴</span><div><b>吴姓用户</b><br><small>11-05 · 家庭宽带</small></div></div>
+          <p>冷却时间改成 30 分钟这事我没注意，还在按 10 分钟等，结果又锁了一次。提示文字确实写了 30 分钟，是我没看。</p>
+        </div>
+        <div class="cmt">
+          <div class="who"><span class="avatar">何</span><div><b>何女士</b><br><small>11-04 · 移动网络</small></div></div>
+          <p>一直白屏，清了缓存就好了。之前还以为是线路问题，换了两次线路都没用，方向完全错了。</p>
+        </div>
+        <div class="cmt">
+          <div class="who"><span class="avatar">郑</span><div><b>郑姓用户</b><br><small>11-03 · 家庭宽带</small></div></div>
+          <p>设备列表里还挂着一台两年前的平板，自己都忘了。退掉之后新手机马上就能登录，问题就这么简单。</p>
+        </div>
+        <div class="cmt">
+          <div class="who"><span class="avatar">许</span><div><b>许同学</b><br><small>11-02 · 校园网</small></div></div>
+          <p>线路乙标“可用”但十次里能有三四次失败，这个标注是不是该改改。至少写清楚“不稳定”，别让人以为是首选。</p>
+        </div>
+        <div class="cmt">
+          <div class="who"><span class="avatar">赵</span><div><b>赵先生</b><br><small>11-01 · 移动网络</small></div></div>
+          <p>整体还行，就是页面底部日期有时候忘了更新，我看了两天的旧批次号才反应过来。更新频率能再稳一点更好。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9 相关资讯 -->
+    <section class="sec" id="news">
+      <div class="sec-head">
+        <h2>相关资讯：入口与规则变化</h2>
+        <p class="sec-desc">每条只讲一件事，不重复上面板块的内容。</p>
+      </div>
+      <ol class="list-clean">
+        <li>
+          <span class="idx">A</span>
+          <div class="body">
+            <a href="/#deep">11 月 1 日起密码错误冷却时间调整为 30 分钟</a>
+            <small>页面提示文字同步更新，旧经验不再适用。</small>
+          </div>
+        </li>
+        <li>
+          <span class="idx">B</span>
+          <div class="body">
+            <a href="/#channels">备用线路状态标注改为三档：推荐、可选、观察中</a>
+            <small>11 月 7 日生效，原先的两档标注无法区分短时连通与稳定可用。</small>
+          </div>
+        </li>
+        <li>
+          <span class="idx">C</span>
+          <div class="body">
+            <a href="/#guide">登录步骤说明补入输入法检查，针对全角字符问题</a>
+            <small>11 月 6 日修改，当天有 4 条相关反馈。</small>
+          </div>
+        </li>
+        <li>
+          <span class="idx">D</span>
+          <div class="body">
+            <a href="/#reviews">本周收到 6 条新反馈，其中 2 条为负面</a>
+            <small>负面涉及线路乙失败率与页脚日期更新滞后，均已记录。</small>
+          </div>
+        </li>
+        <li>
+          <span class="idx">E</span>
+          <div class="body">
+            <a href="/#deep">线路连通记录样本扩展到 12 天</a>
+            <small>原样本 3 天，不足以判断失败是偶发还是持续。</small>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- 10 补充：时间线 -->
+    <section class="sec" id="timeline">
+      <div class="sec-head">
+        <h2>时间线：10 月 25 日至 11 月 7 日</h2>
+        <p class="sec-desc">只放会影响判断的节点。</p>
+      </div>
+      <ul class="timeline">
+        <li><span class="when">10-25</span><div class="what">线路连通记录开始按每天 12 次取样</div><p style="font-size:13px;margin:4px 0 0;color:var(--ink-2)">此前只有零星记录，不足以比较线路。</p></li>
+        <li><span class="when">10-28</span><div class="what">密码错误冷却仍为 10 分钟</div><p style="font-size:13px;margin:4px 0 0;color:var(--ink-2)">最后一次按旧规则记录的时间点。</p></li>
+        <li><span class="when">11-01</span><div class="what">冷却时间调整为 30 分钟</div><p style="font-size:13px;margin:4px 0 0;color:var(--ink-2)">页面提示文字同步改动，规则以页面为准。</p></li>
+        <li><span class="when">11-04</span><div class="what">同日出现白屏与超时两类反馈</div><p style="font-size:13px;margin:4px 0 0;color:var(--ink-2)">首次把两种表现分开记录。</p></li>
+        <li><span class="when">11-06</span><div class="what">全角字符导致密码错误集中出现</div><p style="font-size:13px;margin:4px 0 0;color:var(--ink-2)">当天 4 条反馈，登录步骤据此补入输入法检查。</p></li>
+        <li><span class="when">11-07</span><div class="what">线路状态改为三档标注，批次 J2026-1107</div><p style="font-size:13px;margin:4px 0 0;color:var(--ink-2)">18:40 完成核对，页脚更新时间与此对应。</p></li>
+      </ul>
+    </section>
+
+    <!-- 11 相关推荐 + 引语 + 标签 -->
+    <section class="sec" id="related">
+      <div class="sec-head">
+        <h2>相关推荐：按场景挑标签</h2>
+        <p class="sec-desc">标签对应具体场景，点进去是本页内相应段落。</p>
+      </div>
+      <div class="cols2">
+        <div>
+          <div class="tagcloud" style="margin-bottom:var(--sp-5)">
+            <a href="/#guide">登录入口操作步骤</a>
+            <a href="/#deep">备用线路切换方法</a>
+            <a href="/#faq">账号密码错误处理</a>
+            <a href="/#faq">短信验证码接收失败</a>
+            <a href="/#deep">入口页面打不开排查</a>
+            <a href="/#reviews">多设备同时在线冲突</a>
+            <a href="/#related">公开渠道地址辨别</a>
+            <a href="/#news">入口更新公告解读</a>
+            <a href="/#faq">异地登录提示含义</a>
+            <a href="/#picked">新设备首次登录准备</a>
+            <a href="/#timeline">规则变化时间线</a>
+            <a href="/#overview">地址来源核对</a>
+          </div>
+
+          <div class="panel2">
+            <div class="a">
+              <h3>主线路适用情形</h3>
+              <ul>
+                <li>白天时段，家庭宽带</li>
+                <li>加载耗时稳定在 2 秒内</li>
+                <li>需要完整页面结构</li>
+                <li>失败时优先查缓存</li>
+              </ul>
+            </div>
+            <div class="b">
+              <h3>备用线路适用情形</h3>
+              <ul>
+                <li>晚间高峰，移动网络</li>
+                <li>主线路超过 8 秒未完成</li>
+                <li>优先选“推荐”档</li>
+                <li>失败时先记录时间点</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <aside>
+          <div class="quote-card">
+            <blockquote>“线路标着可用，不等于每次都能打开。看失败分布，比看一次成功更有用。”</blockquote>
+            <cite>—— 11 月 5 日线路记录整理时记下的一条判断</cite>
+          </div>
+          <div class="side-card" style="margin-top:var(--sp-4)">
+            <h3>推荐阅读顺序</h3>
+            <ul>
+              <li><a href="/#overview">先看入口概览<span class="cnt">1</span></a></li>
+              <li><a href="/#deep">再看深度解析<span class="cnt">2</span></a></li>
+              <li><a href="/#guide">按步骤操作<span class="cnt">3</span></a></li>
+              <li><a href="/#faq">遇到问题查问答<span class="cnt">4</span></a></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer class="site">
+  <div class="foot-grid">
+    <div class="foot-brand">
+      <div class="bn">
+        <svg viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="14" fill="#1d5a86"/>
+          <path d="M16 44V20h6v10h8V20h6v24h-6V36h-8v8z" fill="#ffd166"/>
+          <circle cx="46" cy="38" r="6" fill="none" stroke="#7fd1c1" stroke-width="4"/>
+        </svg>
+        jxx官网最新登录地址
+      </div>
+      <p>整理入口核对方法、账号登录流程与故障排查顺序，记录可核对的日期与批次。</p>
+    </div>
+    <div class="foot-col">
+      <h4>入口与登录</h4>
+      <ul>
+        <li><a href="/#overview">入口概览</a></li>
+        <li><a href="/#guide">操作步骤</a></li>
+        <li><a href="/#channels">频道索引</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h4>排查与问答</h4>
+      <ul>
+        <li><a href="/#deep">深度解析</a></li>
+        <li><a href="/#faq">常见问题</a></li>
+        <li><a href="/#timeline">时间线</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h4>动态与反馈</h4>
+      <ul>
+        <li><a href="/#latest">最新更新</a></li>
+        <li><a href="/#reviews">用户反馈</a></li>
+        <li><a href="/#related">相关推荐</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot-note">
+    <span>页面内容含示例条目，线路状态与反馈记录为演示数据，实际以当前页面提示为准。</span>
+    <span>更新时间 2026-11-07 18:40 · 批次 J2026-1107 · 本站为信息整理页，与任何账号服务方无隶属关系</span>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  var searchToggle=document.getElementById('searchToggle');
+  var searchPanel=document.getElementById('searchPanel');
+  var searchInput=document.getElementById('searchInput');
+  var searchGo=document.getElementById('searchGo');
+  var searchMsg=document.getElementById('searchMsg');
+  var menuToggle=document.getElementById('menuToggle');
+  var mainNav=document.getElementById('mainNav');
+  var toTop=document.getElementById('toTop');
+
+  function openSearch(state){
+    searchPanel.classList.toggle('open',state);
+    searchToggle.setAttribute('aria-expanded',state?'true':'false');
+    if(state){searchInput.focus();}
+  }
+  searchToggle.addEventListener('click',function(){
+    openSearch(!searchPanel.classList.contains('open'));
+  });
+
+  function runSearch(){
+    var q=searchInput.value.trim();
+    searchMsg.classList.remove('noresult');
+    if(!q){
+      searchMsg.textContent='请输入关键词后再查找。';
+      searchMsg.classList.add('on');
+      return;
+    }
+    var text=document.body.innerText||'';
+    var lower=text.toLowerCase();
+    if(lower.indexOf(q.toLowerCase())===-1){
+      searchMsg.textContent='没有找到与“'+q+'”相关的内容，可换用更短的关键词，例如“验证码”或“线路”。';
+      searchMsg.classList.add('on','noresult');
+      return;
+    }
+    var target=null;
+    var secs=document.querySelectorAll('section.sec');
+    for(var i=0;i<secs.length;i++){
+      if(secs[i].innerText.toLowerCase().indexOf(q.toLowerCase())!==-1){target=secs[i];break;}
+    }
+    if(target){
+      searchMsg.textContent='已定位到相关内容，正在跳转。';
+      searchMsg.classList.add('on');
+      var id=target.id;
+      var top=target.getBoundingClientRect().top+window.pageYOffset-110;
+      window.scrollTo({top:top,behavior:'smooth'});
+      if(history.replaceState){history.replaceState(null,'','/#'+id);}
+    }else{
+      searchMsg.textContent='相关内容存在，但未能在板块中定位。';
+      searchMsg.classList.add('on');
+    }
+  }
+  searchGo.addEventListener('click',runSearch);
+  searchInput.addEventListener('keydown',function(e){
+    if(e.key==='Enter'){e.preventDefault();runSearch();}
+  });
+
+  menuToggle.addEventListener('click',function(){
+    var open=mainNav.classList.toggle('open');
+    menuToggle.setAttribute('aria-expanded',open?'true':'false');
+  });
+  mainNav.addEventListener('click',function(e){
+    if(e.target.tagName==='A'&&window.innerWidth<=1024){
+      mainNav.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded','false');
+    }
+  });
+
+  document.addEventListener('click',function(e){
+    if(searchPanel.classList.contains('open') &&
+       !searchPanel.contains(e.target) &&
+       !searchToggle.contains(e.target)){
+      openSearch(false);
+    }
+  });
+
+  var lastY=0;
+  window.addEventListener('scroll',function(){
+    var y=window.pageYOffset||document.documentElement.scrollTop;
+    if(y>400){toTop.classList.add('show');}else{toTop.classList.remove('show');}
+    lastY=y;
+  },{passive:true});
+  toTop.addEventListener('click',function(){
+    window.scrollTo({top:0,behavior:'smooth'});
+  });
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"jxx官网最新登录地址",
+  "description":"整理入口核对方法、账号登录流程与常见问题，记录可核对的日期与批次。",
+  "inLanguage":"zh-CN"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"密码明明是对的，为什么提示错误？",
+      "acceptedAnswer":{"@type":"Answer","text":"先看输入法是否全角。全角字母和数字在视觉上与半角接近，但校验时会被当作不同字符。切回英文半角后多数可以一次通过；若仍失败，检查大小写锁定状态。"}
+    },
+    {
+      "@type":"Question",
+      "name":"连续输错几次会被锁？锁多久？",
+      "acceptedAnswer":{"@type":"Answer","text":"连续 5 次错误触发冷却。11 月 1 日起冷却时间由 10 分钟调整为 30 分钟，页面提示文字已同步更新。冷却期内重试不会缩短时间。"}
+    },
+    {
+      "@type":"Question",
+      "name":"短信验证码一直收不到怎么办？",
+      "acceptedAnswer":{"@type":"Answer","text":"依次检查拦截记录与垃圾短信箱、号码是否一致、归属地是否变更，并等待 60 秒后重新获取。重发间隔太短可能被限流。"}
+    },
+    {
+      "@type":"Question",
+      "name":"怎么判断看到的地址是不是最新的？",
+      "acceptedAnswer":{"@type":"Answer","text":"看页面底部的更新日期与批次号，两者应一一对应，例如 11 月 7 日对应 J2026-1107。日期停在一周以前的，先不要输入账号信息。"}
+    },
+    {
+      "@type":"Question",
+      "name":"页面一直白屏，等多久都没反应怎么办？",
+      "acceptedAnswer":{"@type":"Answer","text":"白屏与超时是两种表现。白屏先清浏览器缓存，再用无痕窗口打开；超时先换备用线路。两者处理方式不同，不应混用。"}
+    }
+  ]
+}
+</script>
+</body>
+  </html>
