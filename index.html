@@ -1,0 +1,1153 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>西西gogo人体-写生教学与人体比例资料库</title>
+<meta name="description" content="西西gogo人体聚焦人体写生与比例研究，整理头身比测量方法、骨骼肌肉速记要点、动态线练习步骤与模特排期信息，收录练习者常见问答与作品点评记录，为绘画自学者提供可核对的参考资料。">
+<meta name="keywords" content="西西gogo人体">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232b3a4a'/%3E%3Cpath d='M32 12c6 0 10 4 10 9 0 4-2 7-5 9 5 3 8 8 8 14H19c0-6 3-11 8-14-3-2-5-5-5-9 0-5 4-9 10-9z' fill='%23e8c39e'/%3E%3Ccircle cx='32' cy='40' r='3' fill='%232b3a4a'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#232a31;
+  --ink-2:#49545f;
+  --ink-3:#6b7680;
+  --paper:#f7f4ef;
+  --card:#ffffff;
+  --line:#ddd6cb;
+  --line-soft:#eae4da;
+  --brand:#2b3a4a;
+  --brand-2:#3f5568;
+  --accent:#b4552d;
+  --accent-soft:#f3e2d7;
+  --skin:#e8c39e;
+  --ok:#3c6e57;
+  --radius:14px;
+  --radius-sm:8px;
+  --shadow:0 6px 20px rgba(35,42,49,.08);
+  --shadow-sm:0 2px 8px rgba(35,42,49,.06);
+  --sp1:8px; --sp2:14px; --sp3:22px; --sp4:34px; --sp5:52px;
+  --fs-xs:12.5px; --fs-sm:14px; --fs-base:16px; --fs-lg:18px; --fs-xl:22px; --fs-2xl:28px; --fs-3xl:36px;
+  --sticky-h:96px;
+  --maxw:1180px;
+  --font:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:var(--font);
+  font-size:var(--fs-base);
+  line-height:1.78;
+  color:var(--ink);
+  background:var(--paper);
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:var(--brand-2);text-decoration:none}
+a:hover{color:var(--accent)}
+h1,h2,h3,h4{margin:0;line-height:1.3;font-weight:700;color:var(--ink)}
+p{margin:0 0 .9em}
+ul,ol{margin:0 0 .9em;padding-left:1.3em}
+li{margin-bottom:.35em}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}
+
+/* ---------- 吸顶区 ---------- */
+.sticky-wrap{
+  position:sticky;top:0;z-index:60;
+}
+.announce{
+  background:var(--brand);
+  color:#f2ede4;
+  font-size:var(--fs-sm);
+  padding:8px var(--sp3);
+  display:flex;gap:14px;align-items:center;justify-content:center;
+  flex-wrap:wrap;
+  text-align:center;
+}
+.announce strong{color:#ffd9b8;font-weight:600}
+.announce .dot{width:5px;height:5px;border-radius:50%;background:#c98a5e;display:inline-block}
+.announce a{color:#ffd9b8;text-decoration:underline;text-underline-offset:3px}
+
+.site-head{
+  background:rgba(247,244,239,.96);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+  box-shadow:var(--shadow-sm);
+}
+.head-inner{
+  max-width:var(--maxw);
+  margin:0 auto;
+  padding:12px var(--sp3);
+  display:flex;align-items:center;gap:var(--sp3);
+  flex-wrap:wrap;
+}
+.brand{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+.brand svg{width:38px;height:38px;flex:0 0 auto}
+.brand-text{display:flex;flex-direction:column;line-height:1.2}
+.brand-text .cn{font-size:var(--fs-lg);font-weight:800;letter-spacing:.5px;color:var(--brand)}
+.brand-text .en{font-size:11px;letter-spacing:2px;color:var(--ink-3);text-transform:uppercase}
+.head-nav{flex:1 1 auto}
+.head-nav ul{list-style:none;display:flex;gap:4px;margin:0;padding:0;flex-wrap:wrap}
+.head-nav a{
+  display:inline-block;padding:7px 11px;border-radius:999px;
+  font-size:var(--fs-sm);color:var(--ink-2);font-weight:500;
+  transition:background .18s,color .18s;
+  white-space:nowrap;
+}
+.head-nav a:hover{background:var(--accent-soft);color:var(--accent)}
+.head-nav a.active{background:var(--brand);color:#fff}
+.head-tools{display:flex;align-items:center;gap:8px;flex:0 0 auto}
+.search-box{display:flex;align-items:center;border:1px solid var(--line);border-radius:999px;background:#fff;padding:3px 4px 3px 12px;transition:border-color .18s}
+.search-box:focus-within{border-color:var(--accent)}
+.search-box input{
+  border:0;background:transparent;font:inherit;font-size:var(--fs-sm);
+  padding:5px 6px;width:150px;color:var(--ink);
+}
+.search-box input:focus{outline:none}
+.search-box button{
+  border:0;background:var(--brand);color:#fff;font:inherit;font-size:var(--fs-sm);
+  border-radius:999px;padding:5px 13px;cursor:pointer;transition:background .18s;
+}
+.search-box button:hover{background:var(--accent)}
+.menu-btn{
+  display:none;border:1px solid var(--line);background:#fff;color:var(--brand);
+  border-radius:var(--radius-sm);padding:7px 12px;font:inherit;font-size:var(--fs-sm);
+  cursor:pointer;align-items:center;gap:6px;
+}
+.menu-btn:hover{border-color:var(--brand-2)}
+.search-msg{
+  max-width:var(--maxw);margin:0 auto;padding:0 var(--sp3);
+  font-size:var(--fs-sm);color:var(--accent);min-height:0;
+}
+.search-msg:not(:empty){padding-bottom:8px}
+
+/* ---------- 首屏 ---------- */
+.hero{
+  position:relative;overflow:hidden;
+  background:
+    radial-gradient(1100px 420px at 88% -10%, #efe1d2 0%, transparent 62%),
+    linear-gradient(180deg,#f9f6f1 0%, #f3ede4 100%);
+  border-bottom:1px solid var(--line-soft);
+}
+.hero-inner{
+  max-width:var(--maxw);margin:0 auto;padding:var(--sp5) var(--sp3) var(--sp4);
+  display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);
+  gap:var(--sp4);align-items:center;
+}
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:var(--fs-xs);letter-spacing:1.6px;color:var(--accent);
+  background:var(--accent-soft);border-radius:999px;padding:5px 13px;margin-bottom:16px;
+  font-weight:600;
+}
+.hero h1{
+  font-size:clamp(30px,4.4vw,46px);
+  letter-spacing:1px;margin-bottom:14px;
+  color:var(--brand);
+}
+.hero .lead{
+  font-size:var(--fs-lg);color:var(--ink-2);max-width:34em;margin-bottom:var(--sp3);
+}
+.hero-stats{display:flex;gap:var(--sp3);flex-wrap:wrap;margin-bottom:var(--sp3)}
+.hero-stats div{min-width:96px}
+.hero-stats b{display:block;font-size:var(--fs-2xl);color:var(--brand);line-height:1.15}
+.hero-stats span{font-size:var(--fs-xs);color:var(--ink-3);letter-spacing:.4px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+.btn{
+  display:inline-block;border-radius:999px;padding:10px 22px;font-size:var(--fs-sm);
+  font-weight:600;border:1px solid transparent;transition:transform .18s,background .18s,color .18s;
+  cursor:pointer;font-family:inherit;
+}
+.btn-primary{background:var(--brand);color:#fff}
+.btn-primary:hover{background:var(--accent);color:#fff;transform:translateY(-2px)}
+.btn-ghost{background:#fff;color:var(--brand);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-2px)}
+.hero-visual{position:relative;min-height:300px;display:flex;align-items:center;justify-content:center}
+.hero-visual svg{width:100%;height:auto;max-width:460px;filter:drop-shadow(0 10px 26px rgba(43,58,74,.16))}
+
+/* ---------- 主体布局 ---------- */
+.page{
+  max-width:var(--maxw);margin:0 auto;padding:var(--sp4) var(--sp3) var(--sp5);
+  display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:var(--sp4);
+  align-items:start;
+}
+.main{min-width:0}
+.side{position:sticky;top:calc(var(--sticky-h) + 16px);display:flex;flex-direction:column;gap:var(--sp3)}
+section[id]{scroll-margin-top:calc(var(--sticky-h) + 18px)}
+
+.sec{margin-bottom:var(--sp5)}
+.sec-head{margin-bottom:var(--sp3)}
+.sec-head .kicker{
+  font-size:var(--fs-xs);letter-spacing:2px;color:var(--accent);
+  font-weight:700;text-transform:uppercase;display:block;margin-bottom:6px;
+}
+.sec-head h2{font-size:clamp(22px,2.6vw,28px);color:var(--brand)}
+.sec-head .sub{color:var(--ink-3);font-size:var(--fs-sm);margin-top:6px}
+
+/* 卡片通用 */
+.card{
+  background:var(--card);border:1px solid var(--line-soft);border-radius:var(--radius);
+  padding:var(--sp3);box-shadow:var(--shadow-sm);
+  transition:transform .2s,box-shadow .2s,border-color .2s;
+  height:100%;
+}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:var(--line)}
+.card h3{font-size:var(--fs-lg);margin-bottom:8px}
+.card h3 a{color:var(--brand)}
+.card h3 a:hover{color:var(--accent)}
+.card .meta{font-size:var(--fs-xs);color:var(--ink-3);margin-bottom:8px;letter-spacing:.3px}
+.card p{font-size:var(--fs-sm);color:var(--ink-2);margin-bottom:0}
+.tag{
+  display:inline-block;font-size:var(--fs-xs);padding:2px 10px;border-radius:999px;
+  background:#eef1f4;color:var(--brand-2);margin:0 6px 6px 0;
+}
+.tag:hover{background:var(--accent-soft);color:var(--accent)}
+
+/* 领域概览 */
+.overview-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--sp2)}
+.ov-item{
+  background:#fff;border:1px solid var(--line-soft);border-radius:var(--radius);
+  padding:var(--sp2) 18px;border-left:4px solid var(--brand-2);
+}
+.ov-item b{display:block;font-size:var(--fs-sm);color:var(--brand);margin-bottom:4px}
+.ov-item span{font-size:13px;color:var(--ink-2);line-height:1.7}
+
+/* 精选推荐 - 非对称网格 */
+.feature-grid{
+  display:grid;grid-template-columns:repeat(4,minmax(0,1fr));
+  grid-auto-rows:auto;gap:var(--sp2);
+}
+.feature-grid .big{grid-column:span 2;grid-row:span 2}
+.feature-grid .big .card{padding:var(--sp4) var(--sp3)}
+.feature-grid .big h3{font-size:var(--fs-2xl)}
+.feature-grid .big img{border-radius:var(--radius-sm);margin-bottom:14px;width:100%;height:190px;object-fit:cover}
+.feature-grid .card img{border-radius:6px;width:100%;height:110px;object-fit:cover;margin-bottom:10px}
+
+/* 最新更新 - 紧凑列表 */
+.timeline{list-style:none;padding:0;margin:0;border-left:2px solid var(--line);padding-left:0}
+.upd{
+  position:relative;padding:0 0 var(--sp2) 24px;margin:0;
+}
+.upd::before{
+  content:"";position:absolute;left:-6px;top:7px;width:10px;height:10px;border-radius:50%;
+  background:var(--accent);border:2px solid var(--paper);
+}
+.upd time{font-size:var(--fs-xs);color:var(--accent);font-weight:600;letter-spacing:.5px}
+.upd h3{font-size:var(--fs-base);margin:3px 0 3px}
+.upd p{font-size:13.5px;color:var(--ink-2);margin:0}
+
+/* 分类入口 - 标签索引 */
+.cat-index{display:flex;flex-wrap:wrap;gap:9px}
+.cat-index a{
+  background:#fff;border:1px solid var(--line);border-radius:999px;
+  padding:7px 16px;font-size:var(--fs-sm);color:var(--ink-2);
+  transition:.18s;
+}
+.cat-index a:hover{background:var(--brand);color:#fff;border-color:var(--brand)}
+.cat-index a em{font-style:normal;color:var(--ink-3);font-size:12px;margin-left:5px}
+.cat-index a:hover em{color:#cfd8e0}
+
+/* 深度解析 */
+.article{
+  background:#fff;border:1px solid var(--line-soft);border-radius:var(--radius);
+  padding:var(--sp4);
+  box-shadow:var(--shadow-sm);
+}
+.article h2{font-size:var(--fs-2xl);margin-bottom:6px;color:var(--brand)}
+.article .byline{font-size:var(--fs-xs);color:var(--ink-3);margin-bottom:var(--sp3);letter-spacing:.4px}
+.article h3{
+  font-size:var(--fs-xl);margin:var(--sp3) 0 10px;color:var(--brand);
+  padding-left:12px;border-left:4px solid var(--accent);
+}
+.article p{color:var(--ink-2)}
+.article strong{color:var(--ink)}
+.quote-card{
+  background:linear-gradient(135deg,#f6efe6,#f3e9dd);
+  border-left:4px solid var(--accent);border-radius:var(--radius-sm);
+  padding:18px 20px;margin:var(--sp2) 0;color:var(--ink-2);font-size:var(--fs-sm);
+}
+.quote-card b{color:var(--accent)}
+.compare{
+  display:grid;grid-template-columns:1fr 1fr;gap:0;
+  border:1px solid var(--line);border-radius:var(--radius-sm);overflow:hidden;
+  margin:var(--sp2) 0;font-size:var(--fs-sm);
+}
+.compare > div{padding:14px 16px}
+.compare .c-head{background:#eef1f4;font-weight:700;color:var(--brand);font-size:var(--fs-sm)}
+.compare .c-l{border-right:1px solid var(--line);background:#fcfaf7}
+.compare .c-r{background:#fff}
+.compare ul{margin:0;padding-left:1.1em}
+.data-table{width:100%;border-collapse:collapse;font-size:var(--fs-sm);margin:var(--sp2) 0}
+.data-table th,.data-table td{border:1px solid var(--line);padding:8px 11px;text-align:left}
+.data-table th{background:#eef1f4;color:var(--brand);font-weight:600}
+.data-table tr:nth-child(even) td{background:#fcfaf7}
+
+/* 体验指南 - 编号步骤 */
+.steps{list-style:none;padding:0;margin:0;counter-reset:step}
+.steps li{
+  position:relative;padding:0 0 var(--sp3) 52px;counter-increment:step;
+}
+.steps li::before{
+  content:counter(step,decimal-leading-zero);
+  position:absolute;left:0;top:0;width:36px;height:36px;border-radius:10px;
+  background:var(--brand);color:#fff;font-weight:700;font-size:15px;
+  display:flex;align-items:center;justify-content:center;
+  font-variant-numeric:tabular-nums;
+}
+.steps li:not(:last-child)::after{
+  content:"";position:absolute;left:17px;top:40px;bottom:6px;width:2px;background:var(--line-soft);
+}
+.steps h3{font-size:var(--fs-base);margin-bottom:4px}
+.steps p{font-size:var(--fs-sm);color:var(--ink-2);margin:0}
+
+/* FAQ */
+.faq details{
+  background:#fff;border:1px solid var(--line-soft);border-radius:var(--radius-sm);
+  margin-bottom:10px;overflow:hidden;
+}
+.faq summary{
+  cursor:pointer;padding:14px 18px;font-weight:600;font-size:var(--fs-base);
+  color:var(--brand);list-style:none;position:relative;padding-right:44px;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{
+  content:"+";position:absolute;right:16px;top:50%;transform:translateY(-50%);
+  font-size:20px;color:var(--accent);font-weight:400;transition:transform .2s;
+}
+.faq details[open] summary::after{content:"−"}
+.faq details[open] summary{background:#faf7f2}
+.faq .ans{padding:0 18px 16px;font-size:var(--fs-sm);color:var(--ink-2)}
+.faq .ans p:last-child{margin-bottom:0}
+
+/* 评论 */
+.comments{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--sp2)}
+.cmt{
+  background:#fff;border:1px solid var(--line-soft);border-radius:var(--radius);
+  padding:16px 18px;font-size:var(--fs-sm);color:var(--ink-2);
+}
+.cmt .who{display:flex;align-items:center;gap:9px;margin-bottom:8px}
+.cmt .avatar{
+  width:30px;height:30px;border-radius:50%;flex:0 0 auto;
+  background:var(--brand-2);color:#fff;font-size:12px;font-weight:700;
+  display:flex;align-items:center;justify-content:center;
+}
+.cmt .who b{font-size:13px;color:var(--ink)}
+.cmt .who span{font-size:11.5px;color:var(--ink-3)}
+.cmt p{margin:0}
+.cmt .stars{color:#c98a2e;letter-spacing:1px;font-size:12px;margin-left:auto}
+
+/* 相关资讯 */
+.news-list{list-style:none;padding:0;margin:0}
+.news-list li{
+  display:flex;gap:14px;padding:13px 0;border-bottom:1px dashed var(--line-soft);
+  margin:0;align-items:baseline;
+}
+.news-list li:last-child{border-bottom:0}
+.news-list time{font-size:12px;color:var(--ink-3);flex:0 0 74px;font-variant-numeric:tabular-nums}
+.news-list a{font-size:var(--fs-sm);color:var(--ink);font-weight:500}
+.news-list a:hover{color:var(--accent)}
+.news-list .src{font-size:12px;color:var(--ink-3);margin-left:auto;flex:0 0 auto}
+
+/* 相关推荐 */
+.rec-tags{display:flex;flex-wrap:wrap;gap:10px}
+.rec-tags a{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius-sm);
+  padding:9px 15px;font-size:var(--fs-sm);color:var(--ink-2);transition:.18s;
+}
+.rec-tags a:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-2px)}
+
+/* 榜单 */
+.rank-list{list-style:none;padding:0;margin:0;counter-reset:rank}
+.rank-list li{
+  display:flex;gap:14px;align-items:flex-start;
+  background:#fff;border:1px solid var(--line-soft);border-radius:var(--radius);
+  padding:14px 18px;margin-bottom:10px;counter-increment:rank;
+}
+.rank-list li::before{
+  content:counter(rank);
+  flex:0 0 30px;height:30px;border-radius:8px;background:var(--accent-soft);
+  color:var(--accent);font-weight:800;font-size:14px;
+  display:flex;align-items:center;justify-content:center;
+}
+.rank-list li:nth-child(1)::before{background:var(--accent);color:#fff}
+.rank-list h3{font-size:var(--fs-sm);margin-bottom:2px}
+.rank-list p{font-size:12.5px;color:var(--ink-3);margin:0}
+
+/* 侧栏 */
+.side-card{
+  background:#fff;border:1px solid var(--line-soft);border-radius:var(--radius);
+  padding:18px 20px;box-shadow:var(--shadow-sm);
+}
+.side-card h3{font-size:var(--fs-base);margin-bottom:12px;color:var(--brand);display:flex;align-items:center;gap:8px}
+.side-card h3::before{content:"";width:4px;height:16px;background:var(--accent);border-radius:2px}
+.side-nav ul{list-style:none;padding:0;margin:0}
+.side-nav a{
+  display:block;padding:7px 10px;border-radius:6px;font-size:var(--fs-sm);
+  color:var(--ink-2);border-left:3px solid transparent;transition:.18s;
+}
+.side-nav a:hover{background:#f6f2ec;color:var(--brand)}
+.side-nav a.active{border-left-color:var(--accent);background:var(--accent-soft);color:var(--accent);font-weight:600}
+.side-list{list-style:none;padding:0;margin:0}
+.side-list li{padding:9px 0;border-bottom:1px dashed var(--line-soft);margin:0}
+.side-list li:last-child{border-bottom:0}
+.side-list a{font-size:13.5px;color:var(--ink-2);display:block}
+.side-list a:hover{color:var(--accent)}
+.side-list small{display:block;font-size:11.5px;color:var(--ink-3);margin-top:2px}
+.model-note{font-size:13px;color:var(--ink-2);line-height:1.75}
+.model-note b{color:var(--brand)}
+
+/* 页尾 */
+.site-foot{background:var(--brand);color:#c9d3dc;padding:var(--sp5) var(--sp3) var(--sp3)}
+.foot-inner{max-width:var(--maxw);margin:0 auto}
+.foot-top{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:var(--sp3);padding-bottom:var(--sp4);border-bottom:1px solid rgba(255,255,255,.13)}
+.foot-brand{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.foot-brand svg{width:34px;height:34px}
+.foot-brand b{font-size:var(--fs-lg);color:#fff;letter-spacing:.5px}
+.foot-slogan{font-size:13.5px;color:#a8b6c2;line-height:1.8;max-width:30em}
+.foot-col h4{font-size:13px;color:#fff;margin-bottom:10px;letter-spacing:.6px}
+.foot-col ul{list-style:none;padding:0;margin:0}
+.foot-col li{margin-bottom:7px}
+.foot-col a{font-size:13px;color:#a8b6c2}
+.foot-col a:hover{color:#ffd9b8}
+.foot-note{
+  padding:var(--sp3) 0;font-size:12.5px;color:#8c9aa6;line-height:1.8;
+  border-bottom:1px solid rgba(255,255,255,.13);
+}
+.foot-note b{color:#c9d3dc}
+.foot-bottom{padding-top:var(--sp3);display:flex;gap:var(--sp2);flex-wrap:wrap;align-items:center;justify-content:space-between;font-size:12.5px;color:#8c9aa6}
+
+/* 回到顶部 */
+#toTop{
+  position:fixed;right:20px;bottom:24px;z-index:80;
+  width:46px;height:46px;border-radius:50%;border:0;background:var(--brand);color:#fff;
+  font-size:18px;cursor:pointer;box-shadow:var(--shadow);
+  display:flex;align-items:center;justify-content:center;
+  opacity:0;visibility:hidden;transform:translateY(10px);
+  transition:opacity .25s,transform .25s,visibility .25s,background .18s;
+}
+#toTop.show{opacity:1;visibility:visible;transform:none}
+#toTop:hover{background:var(--accent)}
+@media (max-width:900px){#toTop{bottom:18px;right:14px}}
+
+/* 响应式 */
+@media (max-width:1024px){
+  .page{grid-template-columns:minmax(0,1fr) 260px;gap:var(--sp3)}
+  .feature-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .feature-grid .big{grid-column:span 2;grid-row:auto}
+  .overview-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:860px){
+  :root{--sticky-h:104px}
+  .hero-inner{grid-template-columns:1fr;padding-top:var(--sp4)}
+  .hero-visual{order:-1;min-height:auto;max-width:340px;margin:0 auto}
+  .page{grid-template-columns:1fr}
+  .side{position:static;order:2}
+  .main{order:1}
+  .head-nav{order:3;flex-basis:100%;display:none}
+  .head-nav.open{display:block}
+  .head-nav ul{gap:2px}
+  .head-nav a{padding:6px 10px;font-size:13px}
+  .menu-btn{display:inline-flex}
+  .search-box input{width:110px}
+  .comments{grid-template-columns:1fr}
+}
+@media (max-width:560px){
+  .search-box{display:none}
+  .head-inner{padding:10px 16px}
+  .page{padding:var(--sp3) 16px var(--sp4)}
+  .hero-inner{padding:var(--sp3) 16px}
+  .article{padding:var(--sp3) 18px}
+  .feature-grid{grid-template-columns:1fr}
+  .feature-grid .big{grid-column:auto}
+  .overview-grid{grid-template-columns:1fr}
+  .compare{grid-template-columns:1fr}
+  .compare .c-l{border-right:0;border-bottom:1px solid var(--line)}
+  .foot-top{grid-template-columns:1fr 1fr}
+  .hero-stats{gap:var(--sp2)}
+  .news-list li{flex-wrap:wrap;gap:4px 10px}
+  .news-list .src{margin-left:0}
+}
+@media (prefers-reduced-motion:reduce){
+  *{scroll-behavior:auto!important;transition:none!important;animation:none!important}
+  .card:hover,.btn:hover,.rec-tags a:hover{transform:none}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="sticky-wrap">
+  <div class="announce" role="region" aria-label="站内更新公告">
+    <span><strong>模特定档</strong> 11月6日完成 37 张站姿参考入库，短时定格 28 组</span>
+    <span class="dot" aria-hidden="true"></span>
+    <span>11月5日修订头身比速查表 v3.2，修正七头身肩宽阈值</span>
+    <a href="/#latest">查看更新明细</a>
+  </div>
+
+  <header class="site-head">
+    <div class="head-inner">
+      <a class="brand" href="/#top" aria-label="返回首页顶部">
+        <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+          <rect width="64" height="64" rx="14" fill="#2b3a4a"/>
+          <circle cx="32" cy="21" r="8.5" fill="#e8c39e"/>
+          <path d="M32 31c-8.5 0-14 5.5-14 13v6h28v-6c0-7.5-5.5-13-14-13z" fill="#e8c39e"/>
+          <path d="M20 44h24" stroke="#2b3a4a" stroke-width="2.4" stroke-linecap="round"/>
+          <circle cx="32" cy="21" r="8.5" fill="none" stroke="#b4552d" stroke-width="1.6"/>
+        </svg>
+        <span class="brand-text">
+          <span class="cn">西西gogo人体</span>
+          <span class="en">Figure Studio</span>
+        </span>
+      </a>
+
+      <nav class="head-nav" id="headNav" aria-label="主题频道导航">
+        <ul>
+          <li><a href="/#overview">比例速查</a></li>
+          <li><a href="/#featured">写生素材</a></li>
+          <li><a href="/#latest">模特定档</a></li>
+          <li><a href="/#categories">部位分类</a></li>
+          <li><a href="/#deep">结构解析</a></li>
+          <li><a href="/#guide">练习步骤</a></li>
+          <li><a href="/#faq">常见问答</a></li>
+          <li><a href="/#comments">练习者说</a></li>
+          <li><a href="/#news">行业动态</a></li>
+          <li><a href="/#rank">参考榜单</a></li>
+        </ul>
+      </nav>
+
+      <div class="head-tools">
+        <form class="search-box" id="searchForm" role="search">
+          <label for="searchInput" class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">站内查找</label>
+          <input type="search" id="searchInput" placeholder="查头身比 / 动态线" autocomplete="off">
+          <button type="submit">查找</button>
+        </form>
+        <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="headNav" type="button">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          频道
+        </button>
+      </div>
+    </div>
+    <p class="search-msg" id="searchMsg" role="status" aria-live="polite"></p>
+  </header>
+</div>
+
+<div id="top"></div>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <span class="hero-eyebrow">人体写生 · 比例与结构</span>
+      <h1>西西gogo人体</h1>
+      <p class="lead">把七头身、八头身的标准画成可量尺寸的表格，把站姿、坐姿、扭转的骨架拆成八个落笔点。这里提供模特排期、速写素材与结构判断依据，供自学者按周练手。</p>
+      <div class="hero-stats">
+        <div><b>1,240</b><span>张定格参考</span></div>
+        <div><b>37</b><span>本周新增站姿</span></div>
+        <div><b>8</b><span>部位分类频道</span></div>
+        <div><b>v3.2</b><span>比例速查版本</span></div>
+      </div>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="/#featured">浏览写生素材</a>
+        <a class="btn btn-ghost" href="/#guide">按步骤开练</a>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <svg viewBox="0 0 420 360" role="img" aria-label="人体比例测量示意图">
+        <defs>
+          <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#f0dcc4"/>
+            <stop offset="1" stop-color="#e0b98f"/>
+          </linearGradient>
+        </defs>
+        <rect x="18" y="18" width="384" height="324" rx="18" fill="#fbf7f1" stroke="#e3d9cc"/>
+        <line x1="70" y1="40" x2="70" y2="320" stroke="#c9b9a3" stroke-width="1.6" stroke-dasharray="5 6"/>
+        <g stroke="#b7a58f" stroke-width="1.4">
+          <line x1="58" y1="52" x2="82" y2="52"/>
+          <line x1="58" y1="100" x2="82" y2="100"/>
+          <line x1="58" y1="148" x2="82" y2="148"/>
+          <line x1="58" y1="196" x2="82" y2="196"/>
+          <line x1="58" y1="244" x2="82" y2="244"/>
+          <line x1="58" y1="292" x2="82" y2="292"/>
+        </g>
+        <circle cx="210" cy="76" r="26" fill="url(#g1)"/>
+        <path d="M210 106c-33 0-52 20-52 52v68c0 12 6 18 14 18h76c8 0 14-6 14-18v-68c0-32-19-52-52-52z" fill="url(#g1)"/>
+        <path d="M172 132c-16 8-24 22-24 44v30" stroke="#d8b48c" stroke-width="15" fill="none" stroke-linecap="round"/>
+        <path d="M248 132c16 8 24 22 24 44v30" stroke="#d8b48c" stroke-width="15" fill="none" stroke-linecap="round"/>
+        <path d="M190 240v58" stroke="#d8b48c" stroke-width="17" fill="none" stroke-linecap="round"/>
+        <path d="M230 240v58" stroke="#d8b48c" stroke-width="17" fill="none" stroke-linecap="round"/>
+        <circle cx="210" cy="76" r="26" fill="none" stroke="#b4552d" stroke-width="1.8"/>
+        <line x1="184" y1="76" x2="236" y2="76" stroke="#b4552d" stroke-width="1.4"/>
+        <line x1="210" y1="52" x2="210" y2="100" stroke="#b4552d" stroke-width="1.4"/>
+        <line x1="150" y1="298" x2="270" y2="298" stroke="#2b3a4a" stroke-width="2"/>
+        <text x="296" y="94" font-size="13" fill="#6b7680" font-family="sans-serif">头高 = 1/7</text>
+        <text x="296" y="192" font-size="13" fill="#6b7680" font-family="sans-serif">肩线</text>
+        <text x="296" y="252" font-size="13" fill="#6b7680" font-family="sans-serif">骨点</text>
+        <text x="150" y="316" font-size="12.5" fill="#8c7a63" font-family="sans-serif">测量基准线 · 2026-11 版</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<div class="page">
+  <main class="main">
+
+    <!-- 领域概览 -->
+    <section class="sec" id="overview">
+      <div class="sec-head">
+        <span class="kicker">Overview</span>
+        <h2>人体写生练什么：六个先弄清的判断点</h2>
+        <p class="sub">写生不是把轮廓描准，是先把可量的东西量出来，再决定哪些地方允许夸张。</p>
+      </div>
+      <div class="overview-grid">
+        <div class="ov-item"><b>头身比先定基准</b><span>成人多数落在 7 至 7.5 头身，漫画常用 8 头身，儿童 5 至 6 头身。基准错，后面全歪。</span></div>
+        <div class="ov-item"><b>重心线垂直投影</b><span>站立时从颈窝垂下的线落在两脚之间偏承重脚一侧，偏离超过半个脚掌就要重新找支撑。</span></div>
+        <div class="ov-item"><b>骨点优先于肌肉</b><span>锁骨、髂前上棘、肩峰、尺骨鹰嘴这些可摸到的位置，比肌肉起伏更稳定。</span></div>
+        <div class="ov-item"><b>动态线只有一根</b><span>从头顶贯穿到支撑脚的一条主势线，其余辅助线围绕它展开，不是越多越好。</span></div>
+        <div class="ov-item"><b>明暗服从结构</b><span>胸腔是蛋形、骨盆是楔形，明暗交界线绕体块走，而不是照抄照片上的黑块。</span></div>
+        <div class="ov-item"><b>短时定格练节奏</b><span>30 秒到 2 分钟一张，专练动态线和大块面，长时段再回来抠细节。</span></div>
+      </div>
+    </section>
+
+    <!-- 精选内容推荐 -->
+    <section class="sec" id="featured">
+      <div class="sec-head">
+        <span class="kicker">Picks</span>
+        <h2>本周精选写生素材与解析</h2>
+        <p class="sub">按当日练习目标挑选，每份资料标注可对练的时长与难度。</p>
+      </div>
+      <div class="feature-grid">
+        <div class="big">
+          <article class="card">
+            <img src="https://picsum.photos/seed/xixi-figure-01/760/380" width="760" height="380" loading="lazy" alt="站立回身姿态的人体写生参考，手臂后摆" style="object-fit:cover">
+            <div class="meta">11月6日 · 站姿参考 · 难度中</div>
+            <h3><a href="/#deep">七头身站姿骨架拆解：肩胯反向扭转的八个落笔点</a></h3>
+            <p>选的是 11月6日入库的 37 张站姿里第 12 号回身动作。把肩线、胯线、支撑脚三个标记先钉住，再看手臂摆幅。文中给出每一步的参照骨点，方便对照自己的速写找偏差。</p>
+          </article>
+        </div>
+        <article class="card">
+          <img src="https://picsum.photos/seed/xixi-figure-02/420/240" width="420" height="240" loading="lazy" alt="坐姿侧身人体写生参考" style="object-fit:cover">
+          <div class="meta">11月4日 · 坐姿 · 15 分钟</div>
+          <h3><a href="/#categories">坐姿骨盆前倾角度速记</a></h3>
+          <p>座椅高度 45 厘米时骨盆后倾约 10 度，靠垫加高后会前移，速写时用坐骨结节压点判断。</p>
+        </article>
+        <article class="card">
+          <img src="https://picsum.photos/seed/xixi-figure-03/420/240" width="420" height="240" loading="lazy" alt="手部骨点与关节比例特写参考" style="object-fit:cover">
+          <div class="meta">11月3日 · 局部 · 5 分钟</div>
+          <h3><a href="/#categories">手部三节比例与掌指关节落点</a></h3>
+          <p>中指长约为手掌长的 0.9 倍，掌指关节连线呈弧，速写先画这条弧再分指。</p>
+        </article>
+        <article class="card">
+          <img src="https://picsum.photos/seed/xixi-figure-04/420/240" width="420" height="240" loading="lazy" alt="动态线练习草图纸面参考" style="object-fit:cover">
+          <div class="meta">11月2日 · 动态 · 30 秒 × 20</div>
+          <h3><a href="/#guide">三十秒动态线的起笔顺序</a></h3>
+          <p>从支撑脚起笔到头顶收线，一笔带出主势，再补胸胯两个体块，二十张一组。</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 最新更新 -->
+    <section class="sec" id="latest">
+      <div class="sec-head">
+        <span class="kicker">Updates</span>
+        <h2>最新更新：模特定档与资料修订</h2>
+        <p class="sub">按时间倒序，每条注明改动对象与可核对数量。</p>
+      </div>
+      <ol class="timeline">
+        <li class="upd">
+          <time datetime="2026-11-06">11月6日</time>
+          <h3>站姿定格 37 张入库，编号 Z-2026-1106</h3>
+          <p>包含正面、侧面、四分之三侧三个机位，单张停留 2 分钟与 30 秒两档时长，用于对比长时与短时速写的取舍差异。</p>
+        </li>
+        <li class="upd">
+          <time datetime="2026-11-05">11月5日</time>
+          <h3>头身比速查表升至 v3.2</h3>
+          <p>修正七头身肩宽阈值，从 1.6 头宽调至 1.55 头宽；补充女性骨盆宽度与身高的对照行，旧版数据作废。</p>
+        </li>
+        <li class="upd">
+          <time datetime="2026-11-04">11月4日</time>
+          <h3>坐姿参考 24 张上线，含 4 种座椅高度</h3>
+          <p>座椅高度 40、45、50、55 厘米各 6 张，标注坐骨结节压点与膝盖角度，供判断骨盆前后倾。</p>
+        </li>
+        <li class="upd">
+          <time datetime="2026-11-02">11月2日</time>
+          <h3>手部专题第 3 批：掌指关节弧线 18 张</h3>
+          <p>每张附骨点线稿叠加层，可对照原图查看关节点位，覆盖抓握、半握、张开三种状态。</p>
+        </li>
+        <li class="upd">
+          <time datetime="2026-10-30">10月30日</time>
+          <h3>动态线练习卡新增 6 张短时定格</h3>
+          <p>30 秒、60 秒、120 秒各 2 张，均取自本周新入库动作，替换掉上一批重复度较高的 4 张。</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- 分类入口 -->
+    <section class="sec" id="categories">
+      <div class="sec-head">
+        <span class="kicker">Channels</span>
+        <h2>按部位与姿态找参考</h2>
+        <p class="sub">频道名即检索词，括号内为当前已归档数量。</p>
+      </div>
+      <div class="cat-index">
+        <a href="/#featured">站姿七头身<em>286</em></a>
+        <a href="/#featured">坐姿骨盆角度<em>174</em></a>
+        <a href="/#featured">动态线速写<em>231</em></a>
+        <a href="/#featured">手部骨点<em>148</em></a>
+        <a href="/#featured">足部落脚点<em>96</em></a>
+        <a href="/#featured">头颈肩关系<em>112</em></a>
+        <a href="/#featured">扭转与回身<em>88</em></a>
+        <a href="/#featured">重心与支撑脚<em>79</em></a>
+        <a href="/#featured">肌肉体块速记<em>63</em></a>
+        <a href="/#featured">衣纹下的骨架<em>54</em></a>
+        <a href="/#featured">儿童五头身<em>41</em></a>
+        <a href="/#featured">透视缩短练习<em>37</em></a>
+      </div>
+    </section>
+
+    <!-- 深度解析 -->
+    <section class="sec" id="deep">
+      <div class="sec-head">
+        <span class="kicker">Deep Read</span>
+        <h2>深度解析</h2>
+      </div>
+      <article class="article">
+        <h2>七头身还是八头身：一次可以被反驳的比例判断</h2>
+        <p class="byline">资料整理：比例研究组 · 核对日期 2026-11-05 · 对应速查表 v3.2</p>
+
+        <p>先把结论放在前头：日常写生练习以 7 至 7.5 头身为默认基准，比 8 头身更省事，也更贴近多数成年模特的实际测量值。这个判断可以被两件事推翻——一是模特本人的实测数据系统性偏离，二是练习目标明确指向风格化插画。</p>
+
+        <h3>1. 实测数据对照：3 位模特的头身比记录</h3>
+        <p>11月4日到11月6日，对三位常驻模特做了正面站立测量，方法是用头高（颅顶到颏底）作单位，量到脚底。</p>
+        <table class="data-table">
+          <thead>
+            <tr><th>模特编号</th><th>身高</th><th>头高</th><th>实测头身比</th><th>备注</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>M-07</td><td>172 cm</td><td>23.5 cm</td><td>7.32</td><td>肩偏窄，写生时易画成 7 头身</td></tr>
+            <tr><td>M-11</td><td>165 cm</td><td>21.8 cm</td><td>7.57</td><td>腿长占比高，视觉偏 8 头身</td></tr>
+            <tr><td>M-14</td><td>181 cm</td><td>24.1 cm</td><td>7.51</td><td>头偏小，容易被高估</td></tr>
+          </tbody>
+        </table>
+        <p>三组数据都落在 7.3 到 7.6 之间，没有一组够到 8。把 M-11 单独看，腿身比确实偏长，速写时若照视觉印象落笔，容易把腿多画半个头。可核对的办法是量坐高：M-11 坐高 86 厘米，占身高 52.1%，超过 52% 就属于长腿型，需要单独标出来。</p>
+
+        <h3>2. 两种画法的时间成本差异</h3>
+        <p>同一组 30 秒动态线练习，用 7 头身起稿和用 8 头身起稿，落笔点数其实一样，差别在于修正次数。11月2日的练习记录里，20 张一组中，7 头身起稿平均回改 3.4 次，8 头身起稿平均回改 6.1 次。原因不复杂：8 头身要求每段比例都被压缩，头部一放大，肩、胯、膝盖三处标记全部要跟着改。</p>
+        <div class="compare" role="group" aria-label="七头身与八头身画法对照">
+          <div class="c-head">对照项</div><div class="c-head">具体差异</div>
+          <div class="c-l">七头身起稿</div><div class="c-r">头部单位大，肩线落点在 1.4 头高处，膝盖约 4.5 头高，回改集中在腿部</div>
+          <div class="c-l">八头身起稿</div><div class="c-r">头部单位小，肩线落点 1.6 头高，膝盖约 5 头高，回改分散在全身四处</div>
+          <div class="c-l">适用场景</div><div class="c-r">日常速写、默写、长时作业</div>
+          <div class="c-l">适用场景</div><div class="c-r">风格化插画、时装草图、角色设定</div>
+        </div>
+
+        <h3>3. 说法差异：教材与练习者常见的三处分歧</h3>
+        <p>第一处是肩宽。多数教材写肩宽为 1.5 至 2 个头宽，v3.1 版速查表写的是 1.6，v3.2 改到 1.55。改动依据是 11月5日复测的 12 位模特，肩峰间距平均 1.54 头宽，旧值偏宽。</p>
+        <p>第二处是耻骨联合位置。流行说法是身高一半处，实测 M-07 为 86.5 厘米，身高 172 厘米，正好一半；但 M-11 为 88.4 厘米，超过一半 5.9 厘米。所以“中点”只能当近似，不能当硬标准。</p>
+        <p>第三处是手臂长度。有练习者按指尖到大腿中段来定，实测三位模特的指尖落点分别在大腿中段上方 3 厘米、下方 1 厘米、下方 4 厘米，波动不小。更稳的是用尺骨鹰嘴到腕关节的距离反推。</p>
+
+        <div class="quote-card">
+          <b>可核对的结构拆解：</b>把“比例准不准”拆成四步——① 先测头高；② 量身高除以头高得头身比；③ 量坐高占比判断腿长类型；④ 量肩峰间距判断肩宽档位。四步都有数字，任一步对不上，结论就要改。反过来，只凭“看起来高”下判断，等于没测。
+        </div>
+
+        <h3>4. 这条判断在什么条件下不成立</h3>
+        <p>如果练习目标是角色设定或时装插画，8 头身甚至 9 头身是行业常用的夸张方式，此时 7 头身反而偏离需求。11月3日的一组角色草图里，作者把 8.5 头身作为统一基准，四肢拉长，头缩小，画面成立；换成写实比例，同一构图会显得头重脚轻。比例没有对错，只有和用途是否匹配。</p>
+        <p>另一种不成立的情况是儿童。5 至 6 头身的儿童若按成人 7 头身画，会出现四肢过长的假象。10月30日入库的儿童参考里，6 岁儿童实测 5.3 头身，10 岁约 6.1 头身，年龄每增加两岁，头身比约增 0.4。</p>
+        <p>还有透视。仰视或俯视时，头身比在画面上会被压缩或拉伸，此时应相信体块关系，而不是拿尺去量投影。11月6日的四分之三侧机位就属于这种情况，侧身角度让胯线看起来比正面窄，实际测量并未改变。</p>
+      </article>
+    </section>
+
+    <!-- 体验指南 -->
+    <section class="sec" id="guide">
+      <div class="sec-head">
+        <span class="kicker">Practice</span>
+        <h2>第一次做人体速写的五步流程</h2>
+        <p class="sub">从拿到一张参考图到完成一张 2 分钟速写，每步给一个可执行的检查动作。</p>
+      </div>
+      <ol class="steps">
+        <li>
+          <h3>定画面与头高</h3>
+          <p>先在纸上标出头顶和脚底，量出头高，把这条长度分成需要的份数。A4 竖构图时，7 头身的头高约 36 毫米。</p>
+        </li>
+        <li>
+          <h3>找动态线与支撑脚</h3>
+          <p>从支撑脚往头顶一笔带出主势，再看重心投影是否落在承重脚附近。偏离太远，说明动作是失衡的，需要重选参考。</p>
+        </li>
+        <li>
+          <h3>钉三个标记：肩线、胯线、膝盖</h3>
+          <p>肩线与胯线常呈反向倾斜，速写里先把这两条斜线画出来，再补躯干轮廓。膝盖位置按头高推算，不必逐个量。</p>
+        </li>
+        <li>
+          <h3>补四肢与关节</h3>
+          <p>肘关节约在腰线上方，腕关节接近胯线。手臂自然下垂时，指尖落点在大腿中段附近，允许上下浮动 4 厘米。</p>
+        </li>
+        <li>
+          <h3>回看比例，只改一处</h3>
+          <p>两分钟结束时，只挑最明显的一处偏差修改，比如腿短了半头。一次改太多，会破坏速写的整体节奏。</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- FAQ -->
+    <section class="sec" id="faq">
+      <div class="sec-head">
+        <span class="kicker">FAQ</span>
+        <h2>练习者常问的八个问题</h2>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>七头身和八头身，初学先练哪个？</summary>
+          <div class="ans"><p>先练 7 头身。它对应多数成年模特的实测区间，回改次数少，容易建立稳定的落笔顺序。等能稳定画准 7 头身后的两周，再换 8 头身练夸张比例，适应更快。</p></div>
+        </details>
+        <details>
+          <summary>坐姿骨盆角度怎么判断前倾还是后倾？</summary>
+          <div class="ans"><p>看坐骨结节与髂前上棘的相对位置。坐在 45 厘米高的椅子上，髂前上棘略高于坐骨结节，属轻微后倾；若明显前移下沉，就是前倾。11月4日的 24 张坐姿参考按这个标准分类标注。</p></div>
+        </details>
+        <details>
+          <summary>手部三节比例画不准，有什么速记办法？</summary>
+          <div class="ans"><p>中指长度约等于手掌长度的 0.9 倍，食指与无名指略短，小指约为中指的三分之二。速写时先画掌指关节弧线，再按比例分指，比逐根描更快，也更不容易变形。</p></div>
+        </details>
+        <details>
+          <summary>动态线为什么要一笔画到底？</summary>
+          <div class="ans"><p>一笔带出的是整体的势，中途停顿会变成局部轮廓。30 秒练习里，一笔动态线通常从支撑脚起、头顶收，中间穿过胸腔和骨盆中心。分段画在默写时最容易散架。</p></div>
+        </details>
+        <details>
+          <summary>重心线怎么在速写里快速确认？</summary>
+          <div class="ans"><p>从颈窝向下作垂线，看它落在哪只脚附近。承重脚的接触面通常更完整，脚掌压得更实。垂线偏离承重脚超过半个脚掌，画面就会显得要倒。</p></div>
+        </details>
+        <details>
+          <summary>足部落脚点总画成扁平，怎么改？</summary>
+          <div class="ans"><p>先画出足弓的抬升，再补脚趾。脚踝内侧骨点高于外侧，从正面看两条踝线不等高。11月1日的足部 96 张参考里，把内侧踝高标了出来，可对照检查。</p></div>
+        </details>
+        <details>
+          <summary>肌肉体块记不住，需要背解剖吗？</summary>
+          <div class="ans"><p>先记四个大体块：胸腔蛋形、骨盆楔形、大腿圆柱、上臂纺锤。这四块的位置和朝向，比单块肌肉名称更有用。解剖细节等比例稳定后再补，顺序反了容易卡住。</p></div>
+        </details>
+        <details>
+          <summary>扭转动作的肩胯关系总画错，有判断依据吗？</summary>
+          <div class="ans"><p>肩线与胯线的夹角是判断扭转幅度的直接依据。轻度扭转在 15 度以内，肩胯接近平行；中度为 15 至 30 度；超过 30 度，胸腔侧缘会出现明显压缩。11月6日入库的回身站姿多为中度扭转。</p></div>
+        </details>
+      </div>
+    </section>
+
+    <!-- 用户评论 -->
+    <section class="sec" id="comments">
+      <div class="sec-head">
+        <span class="kicker">Voices</span>
+        <h2>练习者说</h2>
+        <p class="sub">来自练习打卡与素材反馈的留言，保留原始语气。</p>
+      </div>
+      <div class="comments">
+        <div class="cmt">
+          <div class="who"><span class="avatar">林</span><b>林照</b><span>11月6日</span><span class="stars">★★★★★</span></div>
+          <p>Z-2026-1106 那组 30 秒定格很好用。第 12 号回身动作我连画了八张，第五张才把肩线反向找对。之前一直把肩画成和胯同向，难怪动作看着僵。</p>
+        </div>
+        <div class="cmt">
+          <div class="who"><span class="avatar">周</span><b>周迟</b><span>11月5日</span><span class="stars">★★★☆☆</span></div>
+          <p>v3.2 把肩宽从 1.6 改到 1.55，我原来的默写习惯得重调。改完对照 M-07 确实更贴，但过渡期画出来总觉窄，估计还要两三组才能顺手。</p>
+        </div>
+        <div class="cmt">
+          <div class="who"><span class="avatar">阿</span><b>阿棠</b><span>11月5日</span><span class="stars">★★★★☆</span></div>
+          <p>坐姿那批按 40 到 55 厘米分档挺细，可 50 和 55 厘米两组差别看着不明显，标注的骨盆角度差 3 度，速写时基本感觉不到。希望下次把差异更大的高度也补上。</p>
+        </div>
+        <div class="cmt">
+          <div class="who"><span class="avatar">沈</span><b>沈屿</b><span>11月4日</span><span class="stars">★★★★★</span></div>
+          <p>手部关节弧线这个方法直接解决了我画抓握时手指错位的问题。照着弧线分开五指，比例一下就顺了。18 张里第 7 张半握状态最值得反复画。</p>
+        </div>
+        <div class="cmt">
+          <div class="who"><span class="avatar">吴</span><b>吴念</b><span>11月3日</span><span class="stars">★★★☆☆</span></div>
+          <p>深度解析里说耻骨联合只是近似中点，这点我认同。但用坐高占比 52% 当长腿分界，样本只有三个人，说服力还差点，最好再多测几位。</p>
+        </div>
+        <div class="cmt">
+          <div class="who"><span class="avatar">程</span><b>程野</b><span>11月2日</span><span class="stars">★★★★☆</span></div>
+          <p>30 秒动态线一组二十张，画到第十五张手就抖，线条开始断。后来把纸缩小到 A5，节奏才稳下来。这个强度比想象中高，别一上来就上大纸。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 相关资讯 -->
+    <section class="sec" id="news">
+      <div class="sec-head">
+        <span class="kicker">News</span>
+        <h2>相关资讯与资料动态</h2>
+      </div>
+      <ul class="news-list">
+        <li><time datetime="2026-11-07">11月7日</time><a href="/#latest">短时定格 28 组完成入库，含 2 分钟长档对照</a><span class="src">素材组</span></li>
+        <li><time datetime="2026-11-06">11月6日</time><a href="/#deep">三位常驻模特头身比复测完成，最高 7.57</a><span class="src">比例组</span></li>
+        <li><time datetime="2026-11-05">11月5日</time><a href="/#overview">头身比速查表 v3.2 发布，肩宽阈值下调</a><span class="src">编辑组</span></li>
+        <li><time datetime="2026-11-03">11月3日</time><a href="/#faq">动态线练习卡换新 6 张，替换重复动作</a><span class="src">练习组</span></li>
+        <li><time datetime="2026-10-31">10月31日</time><a href="/#guide">两分钟速写流程整理成五步，附检查动作</a><span class="src">教学组</span></li>
+      </ul>
+    </section>
+
+    <!-- 相关推荐 -->
+    <section class="sec" id="recommend">
+      <div class="sec-head">
+        <span class="kicker">More</span>
+        <h2>相关推荐</h2>
+      </div>
+      <div class="rec-tags">
+        <a href="/#deep">七头身站姿骨架拆解</a>
+        <a href="/#categories">坐姿骨盆前倾角度</a>
+        <a href="/#categories">手部骨点与掌指关节</a>
+        <a href="/#guide">三十秒动态线起笔</a>
+        <a href="/#overview">重心线与支撑脚判断</a>
+        <a href="/#featured">扭转与回身动作参考</a>
+        <a href="/#faq">肌肉体块速记四块</a>
+        <a href="/#featured">足部足弓抬升画法</a>
+        <a href="/#overview">儿童五头身比例</a>
+        <a href="/#deep">透视缩短练习要点</a>
+      </div>
+    </section>
+
+    <!-- 补充板块：榜单 -->
+    <section class="sec" id="rank">
+      <div class="sec-head">
+        <span class="kicker">Ranking</span>
+        <h2>本周练习者回访最多的素材</h2>
+        <p class="sub">按 11月1日至11月7日的打卡次数排序，仅反映使用频次，不代表质量高低。</p>
+      </div>
+      <ol class="rank-list">
+        <li><div><h3>Z-2026-1106 回身站姿第 12 号</h3><p>打卡 214 次 · 肩胯反向扭转，适合练中段动态线</p></div></li>
+        <li><div><h3>坐姿 45 厘米档第 3 号</h3><p>打卡 186 次 · 骨盆轻微后倾，膝盖角度清晰</p></div></li>
+        <li><div><h3>手部半握状态第 7 张</h3><p>打卡 163 次 · 掌指关节弧线标准，适合入门</p></div></li>
+        <li><div><h3>30 秒动态线组第 5 张</h3><p>打卡 141 次 · 支撑脚明确，重心投影好找</p></div></li>
+        <li><div><h3>足部内侧踝高参考第 2 张</h3><p>打卡 118 次 · 内外踝高低差明显，纠正扁平脚型</p></div></li>
+      </ol>
+    </section>
+
+  </main>
+
+  <aside class="side" aria-label="侧栏导航与资料">
+    <div class="side-card side-nav">
+      <h3>栏目导航</h3>
+      <ul id="sideNav">
+        <li><a href="/#overview">比例速查</a></li>
+        <li><a href="/#featured">写生素材</a></li>
+        <li><a href="/#latest">模特定档</a></li>
+        <li><a href="/#categories">部位分类</a></li>
+        <li><a href="/#deep">结构解析</a></li>
+        <li><a href="/#guide">练习步骤</a></li>
+        <li><a href="/#faq">常见问答</a></li>
+        <li><a href="/#comments">练习者说</a></li>
+        <li><a href="/#news">行业动态</a></li>
+        <li><a href="/#rank">参考榜单</a></li>
+      </ul>
+    </div>
+
+    <div class="side-card">
+      <h3>近期参考</h3>
+      <ul class="side-list">
+        <li><a href="/#deep">七头身站姿骨架拆解<small>11月6日 · 中难度</small></a></li>
+        <li><a href="/#categories">坐姿骨盆前倾角度速记<small>11月4日 · 15 分钟</small></a></li>
+        <li><a href="/#categories">手部三节比例落点<small>11月3日 · 5 分钟</small></a></li>
+        <li><a href="/#guide">三十秒动态线起笔<small>11月2日 · 20 张一组</small></a></li>
+      </ul>
+    </div>
+
+    <div class="side-card">
+      <h3>速查提示</h3>
+      <p class="model-note"><b>头身比基准</b>：成人 7 至 7.5，漫画 8，儿童 5 至 6。<br><b>肩宽档位</b>：1.55 头宽（v3.2）。<br><b>腿长分界</b>：坐高占比超过 52% 视为长腿型。<br>数据核对日期 2026-11-05。</p>
+    </div>
+  </aside>
+</div>
+
+<footer class="site-foot">
+  <div class="foot-inner">
+    <div class="foot-top">
+      <div>
+        <div class="foot-brand">
+          <svg viewBox="0 0 64 64" aria-hidden="true">
+            <rect width="64" height="64" rx="14" fill="#3f5568"/>
+            <circle cx="32" cy="21" r="8.5" fill="#e8c39e"/>
+            <path d="M32 31c-8.5 0-14 5.5-14 13v6h28v-6c0-7.5-5.5-13-14-13z" fill="#e8c39e"/>
+            <path d="M20 44h24" stroke="#3f5568" stroke-width="2.4" stroke-linecap="round"/>
+          </svg>
+          <b>西西gogo人体</b>
+        </div>
+        <p class="foot-slogan">把可量的尺寸交给尺子，把剩下的判断留给眼睛。写生练习的每一步，都该有迹可循。</p>
+      </div>
+      <div class="foot-col">
+        <h4>练习入口</h4>
+        <ul>
+          <li><a href="/#overview">比例速查</a></li>
+          <li><a href="/#guide">练习步骤</a></li>
+          <li><a href="/#faq">常见问答</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>素材频道</h4>
+        <ul>
+          <li><a href="/#featured">站姿参考</a></li>
+          <li><a href="/#featured">坐姿参考</a></li>
+          <li><a href="/#featured">手部专题</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>资料与互动</h4>
+        <ul>
+          <li><a href="/#deep">结构解析</a></li>
+          <li><a href="/#comments">练习者说</a></li>
+          <li><a href="/#news">资料动态</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-note">
+      <p><b>示例数据说明</b>：页面中的模特编号、素材数量、打卡次数与评论均为练习场景的示例内容，用于展示资料组织方式；头身比、坐高占比等比例数值按常见测量口径给出，实际使用时请以本人或现场模特的实测为准。</p>
+      <p>页脚更新时间 2026-11-07，对应正文可核对项：站姿定格 37 张入库、速查表 v3.2 发布、坐姿参考 24 张上线。</p>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 西西gogo人体 · 内容示例站点</span>
+      <span>比例研究组 · 编辑组 · 素材组</span>
+    </div>
+  </div>
+</footer>
+
+<button id="toTop" type="button" aria-label="回到页面顶部">↑</button>
+
+<script>
+(function(){
+  "use strict";
+
+  /* 移动菜单 */
+  var menuBtn = document.getElementById('menuBtn');
+  var headNav = document.getElementById('headNav');
+  if(menuBtn && headNav){
+    menuBtn.addEventListener('click', function(){
+      var open = headNav.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    headNav.addEventListener('click', function(e){
+      if(e.target.tagName === 'A'){
+        headNav.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  /* 本地搜索 */
+  var form = document.getElementById('searchForm');
+  var input = document.getElementById('searchInput');
+  var msg = document.getElementById('searchMsg');
+  var searchMap = [
+    {k:'头身比', ids:['overview','deep','faq']},
+    {k:'比例', ids:['overview','deep','faq']},
+    {k:'七头身', ids:['overview','deep','featured']},
+    {k:'八头身', ids:['deep','faq']},
+    {k:'动态线', ids:['guide','featured','rank']},
+    {k:'坐姿', ids:['featured','categories','faq']},
+    {k:'骨盆', ids:['featured','faq','deep']},
+    {k:'手部', ids:['categories','featured','faq']},
+    {k:'骨点', ids:['overview','categories','faq']},
+    {k:'重心', ids:['overview','guide','faq']},
+    {k:'速写', ids:['guide','featured']},
+    {k:'定格', ids:['latest','rank']},
+    {k:'模特', ids:['latest','deep','rank']},
+    {k:'解剖', ids:['overview','faq']},
+    {k:'儿童', ids:['categories','deep']},
+    {k:'足部', ids:['categories','rank','faq']},
+    {k:'评论', ids:['comments']},
+    {k:'资讯', ids:['news']},
+    {k:'推荐', ids:['recommend']}
+  ];
+  function doSearch(q){
+    if(!msg) return;
+    var key = (q || '').trim().toLowerCase();
+    if(!key){
+      msg.textContent = '';
+      return;
+    }
+    var hits = searchMap.filter(function(item){
+      return item.k.toLowerCase().indexOf(key) !== -1 || key.indexOf(item.k.toLowerCase()) !== -1;
+    });
+    if(hits.length === 0){
+      msg.textContent = '没有找到与“' + q + '”匹配的栏目，试试：头身比、动态线、坐姿、手部。';
+      return;
+    }
+    var ids = [];
+    hits.forEach(function(h){ h.ids.forEach(function(id){ if(ids.indexOf(id) === -1) ids.push(id); }); });
+    var target = document.getElementById(ids[0]);
+    msg.textContent = '找到 ' + ids.length + ' 个相关栏目，已定位到“' + (target ? (target.querySelector('h2') ? target.querySelector('h2').textContent : ids[0]) : ids[0]) + '”。';
+    if(target){
+      target.scrollIntoView({behavior:'smooth', block:'start'});
+    }
+  }
+  if(form){
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      doSearch(input ? input.value : '');
+    });
+  }
+
+  /* 侧栏滚动高亮 */
+  var sideLinks = Array.prototype.slice.call(document.querySelectorAll('#sideNav a'));
+  var sections = sideLinks.map(function(a){
+    var id = a.getAttribute('href').replace('/#','');
+    return document.getElementById(id);
+  }).filter(Boolean);
+
+  function setActive(id){
+    sideLinks.forEach(function(a){
+      if(a.getAttribute('href') === '/#' + id){ a.classList.add('active'); }
+      else { a.classList.remove('active'); }
+    });
+    var topLinks = document.querySelectorAll('.head-nav a');
+    topLinks.forEach(function(a){
+      if(a.getAttribute('href') === '/#' + id){ a.classList.add('active'); }
+      else { a.classList.remove('active'); }
+    });
+  }
+
+  if('IntersectionObserver' in window && sections.length){
+    var current = sections[0].id;
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){ current = en.target.id; setActive(current); }
+      });
+    }, {rootMargin:'-30% 0px -55% 0px', threshold:0});
+    sections.forEach(function(s){ io.observe(s); });
+  }
+
+  /* 回到顶部 */
+  var toTop = document.getElementById('toTop');
+  function onScroll(){
+    if(!toTop) return;
+    if(window.scrollY > 420){ toTop.classList.add('show'); }
+    else { toTop.classList.remove('show'); }
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+  if(toTop){
+    toTop.addEventListener('click', function(){
+      window.scrollTo({top:0, behavior:'smooth'});
+    });
+  }
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"西西gogo人体",
+  "description":"人体写生与比例研究资料站，收录头身比速查、模特排期、速写素材与结构解析。",
+  "inLanguage":"zh-CN"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"七头身和八头身，初学先练哪个？","acceptedAnswer":{"@type":"Answer","text":"先练7头身。它对应多数成年模特的实测区间，回改次数少，容易建立稳定的落笔顺序。等能稳定画准7头身后的两周，再换8头身练夸张比例，适应更快。"}},
+    {"@type":"Question","name":"坐姿骨盆角度怎么判断前倾还是后倾？","acceptedAnswer":{"@type":"Answer","text":"看坐骨结节与髂前上棘的相对位置。坐在45厘米高的椅子上，髂前上棘略高于坐骨结节，属轻微后倾；若明显前移下沉，就是前倾。"}},
+    {"@type":"Question","name":"手部三节比例画不准，有什么速记办法？","acceptedAnswer":{"@type":"Answer","text":"中指长度约等于手掌长度的0.9倍，食指与无名指略短，小指约为中指的三分之二。速写时先画掌指关节弧线，再按比例分指。"}},
+    {"@type":"Question","name":"动态线为什么要一笔画到底？","acceptedAnswer":{"@type":"Answer","text":"一笔带出的是整体的势，中途停顿会变成局部轮廓。30秒练习里，一笔动态线通常从支撑脚起、头顶收，中间穿过胸腔和骨盆中心。"}},
+    {"@type":"Question","name":"重心线怎么在速写里快速确认？","acceptedAnswer":{"@type":"Answer","text":"从颈窝向下作垂线，看它落在哪只脚附近。承重脚的接触面通常更完整，脚掌压得更实。垂线偏离承重脚超过半个脚掌，画面就会显得要倒。"}},
+    {"@type":"Question","name":"足部落脚点总画成扁平，怎么改？","acceptedAnswer":{"@type":"Answer","text":"先画出足弓的抬升，再补脚趾。脚踝内侧骨点高于外侧，从正面看两条踝线不等高，可对照参考检查。"}},
+    {"@type":"Question","name":"肌肉体块记不住，需要背解剖吗？","acceptedAnswer":{"@type":"Answer","text":"先记四个大体块：胸腔蛋形、骨盆楔形、大腿圆柱、上臂纺锤。这四块的位置和朝向，比单块肌肉名称更有用。"}},
+    {"@type":"Question","name":"扭转动作的肩胯关系总画错，有判断依据吗？","acceptedAnswer":{"@type":"Answer","text":"肩线与胯线的夹角是判断扭转幅度的直接依据。轻度扭转在15度以内，中度为15至30度，超过30度胸腔侧缘会出现明显压缩。"}}
+  ]
+}
+</script>
+</body>
+  </html>
